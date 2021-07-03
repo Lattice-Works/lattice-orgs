@@ -1,4 +1,6 @@
-// @flow
+/*
+ * @flow
+ */
 
 import React from 'react';
 import type { Node } from 'react';
@@ -6,9 +8,9 @@ import type { Node } from 'react';
 import styled from 'styled-components';
 import { List, Map } from 'immutable';
 import { Types } from 'lattice';
-// $FlowFixMe[missing-export]
 import { Popover } from 'lattice-ui-kit';
 import type { Role, UUID } from 'lattice';
+
 import MemberRoleChip from '../../MemberRoleChip';
 
 const { PermissionTypes } = Types;

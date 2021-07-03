@@ -13,7 +13,8 @@ import {
   QUERY,
   REQUEST_STATE,
   TOTAL_HITS,
-} from '../../../common/constants';
+} from '~/common/constants';
+
 import {
   SEARCH_ORGANIZATION_DATA_SETS,
   searchOrganizationDataSets,

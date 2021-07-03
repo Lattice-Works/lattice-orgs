@@ -17,6 +17,14 @@ import { Route, Switch, useRouteMatch } from 'react-router';
 import type { UUID } from 'lattice';
 import type { RequestState } from 'redux-reqseq';
 
+import EntityDataContainer from '~/containers/explore/EntityDataContainer';
+import { EDM, ERR_INVALID_UUID, ORGANIZATIONS } from '~/common/constants';
+import { BasicErrorComponent, Spinner } from '~/components';
+import { INITIALIZE_ORGANIZATION_DATA_SET, initializeOrganizationDataSet } from '~/core/edm/actions';
+import { resetRequestStates } from '~/core/redux/actions';
+import { Routes } from '~/core/router';
+import { SEARCH_DATA, SEARCH_ORGANIZATION_DATA_SETS, clearSearchState } from '~/core/search/actions';
+
 import OrgContainer from './OrgContainer';
 import OrgDataSetContainer from './OrgDataSetContainer';
 import OrgDataSetObjectPermissionsContainer from './OrgDataSetObjectPermissionsContainer';
@@ -28,13 +36,6 @@ import OrgSettingsContainer from './settings/OrgSettingsContainer';
 import { INITIALIZE_ORGANIZATION, initializeOrganization } from './actions';
 import { OrgMemberContainer, OrgPeopleContainer } from './people';
 
-import EntityDataContainer from '../explore/EntityDataContainer';
-import { EDM, ERR_INVALID_UUID, ORGANIZATIONS } from '../../common/constants';
-import { BasicErrorComponent, Spinner } from '../../components';
-import { INITIALIZE_ORGANIZATION_DATA_SET, initializeOrganizationDataSet } from '../../core/edm/actions';
-import { resetRequestStates } from '../../core/redux/actions';
-import { Routes } from '../../core/router';
-import { SEARCH_DATA, SEARCH_ORGANIZATION_DATA_SETS, clearSearchState } from '../../core/search/actions';
 import { OrgAccessRequestsContainer } from '../requests';
 
 const {

@@ -1,4 +1,7 @@
-// @flow
+/*
+ * @flow
+ */
+
 import React from 'react';
 
 import { faLock } from '@fortawesome/pro-light-svg-icons';

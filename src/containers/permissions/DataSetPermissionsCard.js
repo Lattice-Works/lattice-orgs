@@ -14,10 +14,10 @@ import { Colors, Typography } from 'lattice-ui-kit';
 import { useSelector } from 'react-redux';
 import type { Ace, PermissionType, UUID } from 'lattice';
 
-import { ORDERED_PERMISSIONS } from '../../common/constants';
-import { DataSetTitle, SpaceBetweenGrid, StackGrid } from '../../components';
-import { selectOrgDataSet } from '../../core/redux/selectors';
-import type { DataSetPermissionTypeSelection } from '../../common/types';
+import { ORDERED_PERMISSIONS } from '~/common/constants';
+import { DataSetTitle, SpaceBetweenGrid, StackGrid } from '~/components';
+import { selectOrgDataSet } from '~/core/redux/selectors';
+import type { DataSetPermissionTypeSelection } from '~/common/types';
 
 const { NEUTRAL, PURPLE } = Colors;
 const { PermissionTypes } = Types;

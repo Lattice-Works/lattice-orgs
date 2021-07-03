@@ -22,19 +22,19 @@ import type {
 } from 'lattice';
 import type { RequestState } from 'redux-reqseq';
 
-import ObjectPermissionsCard from './ObjectPermissionsCard';
-import { AssignPermissionsToObjectModalBody } from './assign-permissions-to-object';
-
-import { MAX_HITS_10, PAGE, PERMISSIONS } from '../../common/constants';
-import { getDataSetKeys, getPrincipalTitle } from '../../common/utils';
-import { Spinner, StackGrid } from '../../components';
-import { INITIALIZE_OBJECT_PERMISSIONS, initializeObjectPermissions } from '../../core/permissions/actions';
+import { MAX_HITS_10, PAGE, PERMISSIONS } from '~/common/constants';
+import { getDataSetKeys, getPrincipalTitle } from '~/common/utils';
+import { Spinner, StackGrid } from '~/components';
+import { INITIALIZE_OBJECT_PERMISSIONS, initializeObjectPermissions } from '~/core/permissions/actions';
 import {
   selectOrgDataSet,
   selectOrgDataSetColumns,
   selectPermissionsByPrincipal,
   selectUsers,
-} from '../../core/redux/selectors';
+} from '~/core/redux/selectors';
+
+import ObjectPermissionsCard from './ObjectPermissionsCard';
+import { AssignPermissionsToObjectModalBody } from './assign-permissions-to-object';
 
 const {
   isPending,

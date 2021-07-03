@@ -4,7 +4,7 @@
 
 import { Map, getIn } from 'immutable';
 
-import { USERS, USER_SEARCH_RESULTS } from '../../../common/constants';
+import { USERS, USER_SEARCH_RESULTS } from '~/common/constants';
 
 export default function selectUserSearchResults() {
 

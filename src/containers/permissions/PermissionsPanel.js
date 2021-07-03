@@ -32,26 +32,26 @@ import type {
 } from 'lattice';
 import type { RequestState } from 'redux-reqseq';
 
-import { ObjectPermissionCheckbox } from './components';
-
 import {
   ID,
   METADATA,
   NAME,
   PERMISSIONS,
   TITLE,
-} from '../../common/constants';
-import { getDataSetKeys } from '../../common/utils';
-import { Divider, SpaceBetweenGrid } from '../../components';
-import { SET_PERMISSIONS, setPermissions } from '../../core/permissions/actions';
-import { computePermissionAssignments } from '../../core/permissions/utils';
+} from '~/common/constants';
+import { getDataSetKeys } from '~/common/utils';
+import { Divider, SpaceBetweenGrid } from '~/components';
+import { SET_PERMISSIONS, setPermissions } from '~/core/permissions/actions';
+import { computePermissionAssignments } from '~/core/permissions/utils';
 import {
   selectMyKeys,
   selectOrgDataSet,
   selectOrgDataSetColumns,
   selectPrincipalPermissions,
   selectPropertyTypes,
-} from '../../core/redux/selectors';
+} from '~/core/redux/selectors';
+
+import { ObjectPermissionCheckbox } from './components';
 
 const { NEUTRAL, PURPLE } = Colors;
 const { APP_CONTENT_PADDING } = Sizes;

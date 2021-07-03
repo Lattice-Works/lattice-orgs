@@ -8,6 +8,7 @@ export { default as DataSetPermissionsContainer } from './DataSetPermissionsCont
 export { default as ObjectPermissionsContainer } from './ObjectPermissionsContainer';
 export { default as PermissionsActionsGrid } from './PermissionsActionsGrid';
 export { default as PermissionsPanel } from './PermissionsPanel';
+export { default as StepConfirm } from './StepConfirm';
 
 export {
   AssignPermissionsToDataSetModalBody,

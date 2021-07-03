@@ -10,8 +10,8 @@ import { DataUtils } from 'lattice-utils';
 import { useDispatch } from 'react-redux';
 import type { UUID } from 'lattice';
 
-import { Routes } from '../../../core/router';
-import { goToRoute } from '../../../core/router/actions';
+import { Routes } from '~/core/router';
+import { goToRoute } from '~/core/router/actions';
 
 const { NEUTRAL } = Colors;
 const { getEntityKeyId } = DataUtils;

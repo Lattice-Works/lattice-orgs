@@ -6,7 +6,8 @@ import { Map, fromJS } from 'immutable';
 import { RequestStates } from 'redux-reqseq';
 import type { SequenceAction } from 'redux-reqseq';
 
-import { REQUEST_STATE, USER_SEARCH_RESULTS } from '../../../common/constants';
+import { REQUEST_STATE, USER_SEARCH_RESULTS } from '~/common/constants';
+
 import { SEARCH_ALL_USERS, searchAllUsers } from '../actions';
 
 export default function reducer(state :Map, action :SequenceAction) {

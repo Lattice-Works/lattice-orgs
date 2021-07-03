@@ -7,7 +7,7 @@ import { PrincipalsApiActions } from 'lattice-sagas';
 import { RequestStates } from 'redux-reqseq';
 import type { SequenceAction } from 'redux-reqseq';
 
-import { REQUEST_STATE } from '../../../common/constants';
+import { REQUEST_STATE } from '~/common/constants';
 
 const { REGENERATE_CREDENTIAL, regenerateCredential } = PrincipalsApiActions;
 

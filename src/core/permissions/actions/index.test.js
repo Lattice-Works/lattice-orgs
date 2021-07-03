@@ -1,7 +1,8 @@
 import { OrderedSet } from 'immutable';
 
+import { testShouldExportActionTypes, testShouldExportRequestSequences } from '~/common/testing/TestUtils';
+
 import * as PermissionsActions from '.';
-import { testShouldExportActionTypes, testShouldExportRequestSequences } from '../../../utils/testing/TestUtils';
 
 const ACTION_TYPES = OrderedSet([
   'ASSIGN_PERMISSIONS_TO_DATA_SET',

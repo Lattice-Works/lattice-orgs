@@ -4,7 +4,7 @@
 
 import { Map } from 'immutable';
 
-import { ATLAS_CREDENTIALS } from '../../../common/constants';
+import { ATLAS_CREDENTIALS } from '~/common/constants';
 
 export default function reducer(state :Map) {
 

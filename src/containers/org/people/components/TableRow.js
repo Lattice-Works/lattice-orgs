@@ -1,15 +1,13 @@
-// @flow
+/*
+ * @flow
+ */
 
 import React, { useState } from 'react';
 
 import styled from 'styled-components';
 import { faEllipsisV } from '@fortawesome/pro-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  Map,
-  Set,
-  get
-} from 'immutable';
+import { Map, Set, get } from 'immutable';
 import { AuthUtils } from 'lattice-auth';
 import {
   Checkbox,
@@ -23,11 +21,12 @@ import { Link } from 'react-router-dom';
 import type { Role, UUID } from 'lattice';
 import type { UserInfo } from 'lattice-auth';
 
+import { getSecurablePrincipalId, getUserProfile } from '~/common/utils';
+import { Routes } from '~/core/router';
+
 import RoleChipsList from './RoleChipsList';
 
 import AssignRolesToMembersModal from '../../components/AssignRolesToMembersModal';
-import { getSecurablePrincipalId, getUserProfile } from '../../../../common/utils';
-import { Routes } from '../../../../core/router';
 
 const { NEUTRAL } = Colors;
 

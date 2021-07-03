@@ -12,18 +12,18 @@ import { RequestStates } from 'redux-reqseq';
 import type { Organization, Role, UUID } from 'lattice';
 import type { RequestState } from 'redux-reqseq';
 
-import { PERMISSIONS } from '../../common/constants';
+import { PERMISSIONS } from '~/common/constants';
 import {
   CrumbItem,
   CrumbLink,
   Crumbs,
   Divider,
   StackGrid,
-} from '../../components';
-import { GET_ORG_ROLE_OBJECT_PERMISSIONS, getOrgRoleObjectPermissions } from '../../core/permissions/actions';
-import { resetRequestStates } from '../../core/redux/actions';
-import { selectOrganization } from '../../core/redux/selectors';
-import { ObjectPermissionsContainer, PermissionsActionsGrid } from '../permissions';
+} from '~/components';
+import { ObjectPermissionsContainer, PermissionsActionsGrid } from '~/containers/permissions';
+import { GET_ORG_ROLE_OBJECT_PERMISSIONS, getOrgRoleObjectPermissions } from '~/core/permissions/actions';
+import { resetRequestStates } from '~/core/redux/actions';
+import { selectOrganization } from '~/core/redux/selectors';
 
 const OrgRoleObjectPermissionsContainer = ({
   organizationId,

@@ -18,9 +18,7 @@ import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import type { Organization, Role, UUID } from 'lattice';
 
-import { AddRoleToOrgModal } from './components';
-
-import { FILTER, MAX_HITS_20, PAGE } from '../../common/constants';
+import { FILTER, MAX_HITS_20, PAGE } from '~/common/constants';
 import {
   ActionsGrid,
   CrumbItem,
@@ -28,9 +26,11 @@ import {
   Crumbs,
   PlusButton,
   StackGrid,
-} from '../../components';
-import { selectMyKeys, selectOrganization } from '../../core/redux/selectors';
-import { Routes } from '../../core/router';
+} from '~/components';
+import { selectMyKeys, selectOrganization } from '~/core/redux/selectors';
+import { Routes } from '~/core/router';
+
+import { AddRoleToOrgModal } from './components';
 
 const { pagination } = ReduxUtils;
 

@@ -11,19 +11,19 @@ import { useDispatch, useSelector } from 'react-redux';
 import type { UUID } from 'lattice';
 import type { RequestState } from 'redux-reqseq';
 
-import { EntityDataRow } from './components';
-
 import {
   DATA,
   MAX_HITS_10,
   METADATA,
   NAME,
   TITLE,
-} from '../../common/constants';
-import { DataTableWrapper } from '../../components';
-import { FETCH_ENTITY_SET_DATA, fetchEntitySetData } from '../../core/data/actions';
-import { resetRequestStates } from '../../core/redux/actions';
-import { selectOrgDataSetColumns, selectOrgEntitySetData } from '../../core/redux/selectors';
+} from '~/common/constants';
+import { DataTableWrapper } from '~/components';
+import { FETCH_ENTITY_SET_DATA, fetchEntitySetData } from '~/core/data/actions';
+import { resetRequestStates } from '~/core/redux/actions';
+import { selectOrgDataSetColumns, selectOrgEntitySetData } from '~/core/redux/selectors';
+
+import { EntityDataRow } from './components';
 
 const { isPending, isSuccess } = ReduxUtils;
 const { PURPLE } = Colors;

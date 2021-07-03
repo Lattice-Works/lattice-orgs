@@ -17,11 +17,12 @@ import type { Ace, Principal, UUID } from 'lattice';
 import type { WorkerResponse } from 'lattice-sagas';
 import type { SequenceAction } from 'redux-reqseq';
 
+import { ERR_INVALID_UUID } from '~/common/constants';
+import { getDataSetKeys } from '~/common/utils';
+import { selectOrgDataSet, selectOrgDataSetColumns, selectPermissionsByPrincipal } from '~/core/redux/selectors';
+
 import { getPermissionsWorker } from './getPermissions';
 
-import { ERR_INVALID_UUID } from '../../../common/constants';
-import { getDataSetKeys } from '../../../common/utils';
-import { selectOrgDataSet, selectOrgDataSetColumns, selectPermissionsByPrincipal } from '../../redux/selectors';
 import { INITIALIZE_OBJECT_PERMISSIONS, getPermissions, initializeObjectPermissions } from '../actions';
 
 const { PrincipalTypes } = Types;

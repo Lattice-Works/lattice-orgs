@@ -8,7 +8,8 @@ import { RequestStates } from 'redux-reqseq';
 import type { UUID } from 'lattice';
 import type { SequenceAction } from 'redux-reqseq';
 
-import { ERROR, MEMBERS, REQUEST_STATE } from '../../../common/constants';
+import { ERROR, MEMBERS, REQUEST_STATE } from '~/common/constants';
+
 import { sortOrganizationMembers } from '../utils';
 
 const { GET_ORGANIZATION_MEMBERS, getOrganizationMembers } = OrganizationsApiActions;

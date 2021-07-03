@@ -4,7 +4,7 @@
 
 import { Map, getIn } from 'immutable';
 
-import { DATA_SET_PERMISSIONS_PAGE, PERMISSIONS } from '../../../common/constants';
+import { DATA_SET_PERMISSIONS_PAGE, PERMISSIONS } from '~/common/constants';
 
 export default function selectDataSetPermissionsPage() {
 

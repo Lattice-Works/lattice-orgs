@@ -15,28 +15,29 @@ import { AppContentWrapper, Modal, Typography } from 'lattice-ui-kit';
 import { useDispatch, useSelector } from 'react-redux';
 import type { Organization, Principal, UUID } from 'lattice';
 
-import MemberRolesContainer from '../MemberRolesContainer';
-import { getPrincipal, getSecurablePrincipalId, getUserProfile } from '../../../common/utils';
+import { getPrincipal, getSecurablePrincipalId, getUserProfile } from '~/common/utils';
 import {
   CrumbItem,
   CrumbLink,
   Crumbs,
   StackGrid,
-} from '../../../components';
-import {
-  GET_CURRENT_ROLE_AUTHORIZATIONS,
-  getCurrentRoleAuthorizations,
-  resetCurrentRoleAuthorizations
-} from '../../../core/permissions/actions';
-import { resetRequestStates } from '../../../core/redux/actions';
-import { selectOrganization, selectOrganizationMembers } from '../../../core/redux/selectors';
+} from '~/components';
 import {
   AssignPermissionsToDataSetModalBody,
   DataSetPermissionsContainer,
   PermissionsActionsGrid,
   PermissionsPanel,
-} from '../../permissions';
-import type { UserProfile } from '../../../common/types';
+} from '~/containers/permissions';
+import {
+  GET_CURRENT_ROLE_AUTHORIZATIONS,
+  getCurrentRoleAuthorizations,
+  resetCurrentRoleAuthorizations
+} from '~/core/permissions/actions';
+import { resetRequestStates } from '~/core/redux/actions';
+import { selectOrganization, selectOrganizationMembers } from '~/core/redux/selectors';
+import type { UserProfile } from '~/common/types';
+
+import MemberRolesContainer from '../MemberRolesContainer';
 
 const { PermissionTypes } = Types;
 

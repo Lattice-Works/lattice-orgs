@@ -17,23 +17,23 @@ import { useDispatch, useSelector } from 'react-redux';
 import type { UUID } from 'lattice';
 import type { RequestState } from 'redux-reqseq';
 
-import { FQNS, MAX_HITS_10, SEARCH } from '../../../common/constants';
+import { FQNS, MAX_HITS_10, SEARCH } from '~/common/constants';
 import {
   DataSetTitle,
   SearchForm,
   SpaceBetweenGrid,
   StackGrid,
-} from '../../../components';
+} from '~/components';
 import {
   selectSearchHits,
   selectSearchPage,
   selectSearchQuery,
   selectSearchTotalHits,
-} from '../../../core/redux/selectors';
+} from '~/core/redux/selectors';
 import {
   SEARCH_ORGANIZATION_DATA_SETS,
   searchOrganizationDataSets,
-} from '../../../core/search/actions';
+} from '~/core/search/actions';
 
 const { getPropertyValue } = DataUtils;
 const { isNonEmptyString } = LangUtils;

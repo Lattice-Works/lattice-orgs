@@ -6,7 +6,7 @@ import { useEffect } from 'react';
 
 import { useDispatch } from 'react-redux';
 
-import { resetRequestStates } from '../../core/redux/actions';
+import { resetRequestStates } from '~/core/redux/actions';
 
 const ResetOnUnmount = ({
   actions,

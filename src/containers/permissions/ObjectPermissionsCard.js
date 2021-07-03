@@ -33,9 +33,6 @@ import type {
 } from 'lattice';
 import type { RequestState } from 'redux-reqseq';
 
-import DataSetColumnPermissionsSection from './DataSetColumnPermissionsSection';
-import { ObjectPermissionCheckbox } from './components';
-
 import {
   ID,
   METADATA,
@@ -43,16 +40,19 @@ import {
   ORDERED_PERMISSIONS,
   PERMISSIONS,
   TITLE,
-} from '../../common/constants';
-import { getPrincipalTitle } from '../../common/utils';
+} from '~/common/constants';
+import { getPrincipalTitle } from '~/common/utils';
 import {
   Divider,
   SpaceBetweenGrid,
   Spinner,
   StackGrid,
-} from '../../components';
-import { UPDATE_PERMISSIONS, updatePermissions } from '../../core/permissions/actions';
-import { selectMyKeys, selectUser } from '../../core/redux/selectors';
+} from '~/components';
+import { UPDATE_PERMISSIONS, updatePermissions } from '~/core/permissions/actions';
+import { selectMyKeys, selectUser } from '~/core/redux/selectors';
+
+import DataSetColumnPermissionsSection from './DataSetColumnPermissionsSection';
+import { ObjectPermissionCheckbox } from './components';
 
 const { NEUTRAL } = Colors;
 const { AceBuilder } = Models;

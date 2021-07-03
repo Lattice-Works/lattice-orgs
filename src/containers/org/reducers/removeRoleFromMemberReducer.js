@@ -9,7 +9,7 @@ import { RequestStates } from 'redux-reqseq';
 import type { UUID } from 'lattice';
 import type { SequenceAction } from 'redux-reqseq';
 
-import { ERROR, MEMBERS, REQUEST_STATE } from '../../../common/constants';
+import { ERROR, MEMBERS, REQUEST_STATE } from '~/common/constants';
 
 const { REMOVE_ROLE_FROM_MEMBER, removeRoleFromMember } = OrganizationsApiActions;
 const { getUserId } = PersonUtils;

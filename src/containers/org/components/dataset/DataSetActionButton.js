@@ -20,9 +20,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import type { UUID } from 'lattice';
 import type { RequestState } from 'redux-reqseq';
 
-import AssembleMenuItem from './AssembleMenuItem';
-import PromoteTableModal from './PromoteTableModal';
-
 import {
   DESCRIPTION,
   EDIT_TITLE_DESCRIPTION_DATA_SCHEMA as DATA_SCHEMA,
@@ -33,17 +30,20 @@ import {
   NAME,
   OPENLATTICE,
   TITLE,
-} from '../../../../common/constants';
-import { isEntitySet } from '../../../../common/utils';
-import { UpdateMetaModal } from '../../../../components';
-import { UPDATE_ORGANIZATION_DATA_SET, updateOrganizationDataSet } from '../../../../core/edm/actions';
+} from '~/common/constants';
+import { isEntitySet } from '~/common/utils';
+import { UpdateMetaModal } from '~/components';
+import { UPDATE_ORGANIZATION_DATA_SET, updateOrganizationDataSet } from '~/core/edm/actions';
 import {
   selectCurrentAuthorization,
   selectDataSetSchema,
   selectMyKeys,
   selectOrgDataSet,
-} from '../../../../core/redux/selectors';
-import { Routes } from '../../../../core/router';
+} from '~/core/redux/selectors';
+import { Routes } from '~/core/router';
+
+import AssembleMenuItem from './AssembleMenuItem';
+import PromoteTableModal from './PromoteTableModal';
 
 const { getOrganizationDataSetSchema } = DataSetsApiActions;
 const { EntitySetFlagTypes, PermissionTypes } = Types;

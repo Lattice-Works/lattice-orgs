@@ -14,8 +14,9 @@ import type { Saga } from '@redux-saga/core';
 import type { WorkerResponse } from 'lattice-sagas';
 import type { SequenceAction } from 'redux-reqseq';
 
-import { getEntityDataModelTypes } from '../../../core/edm/actions';
-import { getEntityDataModelTypesWorker } from '../../../core/edm/sagas';
+import { getEntityDataModelTypes } from '~/core/edm/actions';
+import { getEntityDataModelTypesWorker } from '~/core/edm/sagas';
+
 import { INITIALIZE_APPLICATION, initializeApplication } from '../actions';
 
 const { getAllOrganizations } = OrganizationsApiActions;

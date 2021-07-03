@@ -8,7 +8,8 @@ import { RequestStates } from 'redux-reqseq';
 import type { UUID } from 'lattice';
 import type { SequenceAction } from 'redux-reqseq';
 
-import { ENTITY_SET_DATA, REQUEST_STATE } from '../../../common/constants';
+import { ENTITY_SET_DATA, REQUEST_STATE } from '~/common/constants';
+
 import { FETCH_ENTITY_SET_DATA, fetchEntitySetData } from '../actions';
 
 const { getEntityKeyId } = DataUtils;

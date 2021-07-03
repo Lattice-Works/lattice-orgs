@@ -6,7 +6,8 @@ import { Map } from 'immutable';
 import { RequestStates } from 'redux-reqseq';
 import type { SequenceAction } from 'redux-reqseq';
 
-import { REQUEST_STATE } from '../../../common/constants';
+import { REQUEST_STATE } from '~/common/constants';
+
 import {
   GET_ORG_OBJECT_PERMISSIONS,
   getOrgObjectPermissions,

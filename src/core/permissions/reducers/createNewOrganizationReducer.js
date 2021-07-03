@@ -6,8 +6,8 @@ import { List, Map } from 'immutable';
 import type { UUID } from 'lattice';
 import type { SequenceAction } from 'redux-reqseq';
 
-import { MY_KEYS } from '../../../common/constants';
-import { createNewOrganization } from '../../../containers/org/actions';
+import { MY_KEYS } from '~/common/constants';
+import { createNewOrganization } from '~/containers/org/actions';
 
 export default function reducer(state :Map, action :SequenceAction) {
 

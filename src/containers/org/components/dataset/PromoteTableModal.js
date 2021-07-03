@@ -1,4 +1,7 @@
-// @flow
+/*
+ * @flow
+ */
+
 import React, { useEffect } from 'react';
 
 import { OrganizationsApiActions } from 'lattice-sagas';
@@ -8,9 +11,9 @@ import { RequestStates } from 'redux-reqseq';
 import type { UUID } from 'lattice';
 import type { RequestState } from 'redux-reqseq';
 
-import PromoteBody from './PromoteBody';
+import { EDM } from '~/common/constants';
 
-import { EDM } from '../../../../common/constants';
+import PromoteBody from './PromoteBody';
 
 const { PROMOTE_STAGING_TABLE } = OrganizationsApiActions;
 

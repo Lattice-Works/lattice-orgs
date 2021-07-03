@@ -14,20 +14,21 @@ import { useDispatch } from 'react-redux';
 import type { Ace, Principal, UUID } from 'lattice';
 import type { RequestState } from 'redux-reqseq';
 
-import StepSelectRoleOrUser from './StepSelectRoleOrUser';
-
-import StepConfirm from '../StepConfirm';
-import StepSelectPermissions from '../StepSelectPermissions';
-import { PERMISSIONS } from '../../../common/constants';
-import { getPrincipal } from '../../../common/utils';
-import { ModalBody, StepsController } from '../../../components';
+import { PERMISSIONS } from '~/common/constants';
+import { getPrincipal } from '~/common/utils';
+import { ModalBody, StepsController } from '~/components';
 import {
   ASSIGN_PERMISSIONS_TO_DATA_SET,
   UPDATE_PERMISSIONS,
   assignPermissionsToDataSet,
   updatePermissions
-} from '../../../core/permissions/actions';
-import { resetRequestStates } from '../../../core/redux/actions';
+} from '~/core/permissions/actions';
+import { resetRequestStates } from '~/core/redux/actions';
+
+import StepSelectRoleOrUser from './StepSelectRoleOrUser';
+
+import StepConfirm from '../StepConfirm';
+import StepSelectPermissions from '../StepSelectPermissions';
 
 const { AceBuilder } = Models;
 const { ActionTypes } = Types;

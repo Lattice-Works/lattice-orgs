@@ -7,7 +7,7 @@ import { DataSetsApiActions } from 'lattice-sagas';
 import { RequestStates } from 'redux-reqseq';
 import type { SequenceAction } from 'redux-reqseq';
 
-import { DATA_SET_SCHEMA, REQUEST_STATE } from '../../../common/constants';
+import { DATA_SET_SCHEMA, REQUEST_STATE } from '~/common/constants';
 
 const { GET_ORGANIZATION_DATA_SET_SCHEMA, getOrganizationDataSetSchema } = DataSetsApiActions;
 

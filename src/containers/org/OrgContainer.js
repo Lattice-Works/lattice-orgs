@@ -29,17 +29,14 @@ import { useDispatch, useSelector } from 'react-redux';
 import type { Organization, UUID } from 'lattice';
 import type { RequestState } from 'redux-reqseq';
 
-import { DELETE_EXISTING_ORGANIZATION } from './actions';
-import { DataSetSearchResultCard, OrgActionButton } from './components';
-
-import { BadgeCheckIcon } from '../../assets';
+import { BadgeCheckIcon } from '~/assets';
 import {
   APPS,
   ES_FLAG_TYPE_RS_OPTIONS,
   MAX_HITS_10,
   ORGANIZATIONS,
   SEARCH,
-} from '../../common/constants';
+} from '~/common/constants';
 import {
   CrumbLink,
   Flip,
@@ -48,8 +45,8 @@ import {
   SpaceBetweenGrid,
   Spinner,
   StackGrid,
-} from '../../components';
-import { resetRequestStates } from '../../core/redux/actions';
+} from '~/components';
+import { resetRequestStates } from '~/core/redux/actions';
 import {
   selectIsAppInstalled,
   selectOrganization,
@@ -57,14 +54,17 @@ import {
   selectSearchPage,
   selectSearchQuery,
   selectSearchTotalHits,
-} from '../../core/redux/selectors';
-import { Routes } from '../../core/router';
+} from '~/core/redux/selectors';
+import { Routes } from '~/core/router';
 import {
   SEARCH_ORGANIZATION_DATA_SETS,
   clearSearchState,
   searchOrganizationDataSets,
-} from '../../core/search/actions';
-import type { ReactSelectOption } from '../../common/types';
+} from '~/core/search/actions';
+import type { ReactSelectOption } from '~/common/types';
+
+import { DELETE_EXISTING_ORGANIZATION } from './actions';
+import { DataSetSearchResultCard, OrgActionButton } from './components';
 
 const { PURPLE } = Colors;
 const { isNonEmptyString } = LangUtils;

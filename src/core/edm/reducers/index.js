@@ -39,7 +39,7 @@ import {
   PROPERTY_TYPES,
   PROPERTY_TYPES_INDEX_MAP,
   RS_INITIAL_STATE,
-} from '../../../common/constants';
+} from '~/common/constants';
 import { RESET_REQUEST_STATES } from '../../redux/actions';
 import { resetRequestStatesReducer } from '../../redux/reducers';
 import {

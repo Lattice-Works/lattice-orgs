@@ -15,16 +15,16 @@ import { ReduxUtils } from 'lattice-utils';
 import { useSelector } from 'react-redux';
 import type { Organization, UUID } from 'lattice';
 
-import { CreateOrgModal } from './components';
-
-import { FILTER, MAX_HITS_10, PAGE } from '../../common/constants';
+import { FILTER, MAX_HITS_10, PAGE } from '~/common/constants';
 import {
   ActionsGrid,
   PlusButton,
   SimpleOrganizationCard,
   StackGrid,
-} from '../../components';
-import { selectOrganizations } from '../../core/redux/selectors';
+} from '~/components';
+import { selectOrganizations } from '~/core/redux/selectors';
+
+import { CreateOrgModal } from './components';
 
 const { pagination } = ReduxUtils;
 

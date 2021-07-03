@@ -12,17 +12,17 @@ import { useSelector } from 'react-redux';
 import type { UUID } from 'lattice';
 import type { RequestState } from 'redux-reqseq';
 
-import EntityNeighborsTable from './EntityNeighborsTable';
-import { EXPLORE_ENTITY_NEIGHBORS } from './actions';
-
-import { EXPLORE } from '../../common/constants';
+import { EXPLORE } from '~/common/constants';
 import {
   CrumbSeparator,
   DataSetTitle,
   Spinner,
   StackGrid,
-} from '../../components';
-import { selectOrgDataSets } from '../../core/redux/selectors';
+} from '~/components';
+import { selectOrgDataSets } from '~/core/redux/selectors';
+
+import EntityNeighborsTable from './EntityNeighborsTable';
+import { EXPLORE_ENTITY_NEIGHBORS } from './actions';
 
 const { isPending } = ReduxUtils;
 

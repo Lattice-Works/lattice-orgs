@@ -4,7 +4,7 @@
 
 import { Map, getIn } from 'immutable';
 
-import { USERS } from '../../../common/constants';
+import { USERS } from '~/common/constants';
 
 export default function selectUser(userId :string) {
 

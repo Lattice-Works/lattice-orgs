@@ -10,7 +10,8 @@ import { Card, CardSegment, Typography } from 'lattice-ui-kit';
 import { useGoToRoute } from 'lattice-utils';
 import type { Organization, UUID } from 'lattice';
 
-import { Routes } from '../../core/router';
+import { Routes } from '~/core/router';
+
 import { GapGrid, StackGrid } from '../grids';
 
 const SimpleOrganizationCard = ({

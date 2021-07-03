@@ -22,8 +22,9 @@ import {
   HITS,
   MAX_HITS_10,
   TOTAL_HITS,
-} from '../../../common/constants';
-import { selectOrganization } from '../../redux/selectors';
+} from '~/common/constants';
+import { selectOrganization } from '~/core/redux/selectors';
+
 import { SEARCH_ORGANIZATION_DATA_SETS, searchOrganizationDataSets } from '../actions';
 
 const { EntitySetFlagTypes } = Types;

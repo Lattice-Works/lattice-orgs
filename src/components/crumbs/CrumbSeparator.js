@@ -7,12 +7,13 @@ import React from 'react';
 import { faChevronRight } from '@fortawesome/pro-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-type Props = {
+const CrumbSeparator = ({
+  icon,
+  size,
+} :{
   icon ?:any;
   size ?:string;
-};
-
-const CrumbSeparator = ({ icon, size } :Props) => (
+}) => (
   <FontAwesomeIcon icon={icon} fixedWidth size={size} />
 );
 

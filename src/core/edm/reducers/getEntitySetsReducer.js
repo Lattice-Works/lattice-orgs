@@ -13,7 +13,7 @@ import {
   ENTITY_SETS,
   ENTITY_SETS_INDEX_MAP,
   REQUEST_STATE,
-} from '../../../common/constants';
+} from '~/common/constants';
 
 const { EntitySetBuilder } = Models;
 const { GET_ENTITY_SETS, getEntitySets } = EntitySetsApiActions;

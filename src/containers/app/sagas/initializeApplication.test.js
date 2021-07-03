@@ -6,15 +6,16 @@ import { all, call, put } from '@redux-saga/core/effects';
 import { OrganizationsApiActions, OrganizationsApiSagas } from 'lattice-sagas';
 import { v4 as uuid } from 'uuid';
 
-import { initializeApplicationWatcher, initializeApplicationWorker } from './initializeApplication';
-
-import { GET_EDM_TYPES } from '../../../core/edm/actions';
-import { getEntityDataModelTypesWorker } from '../../../core/edm/sagas';
 import {
   GENERATOR_TAG,
   testShouldBeGeneratorFunction,
   testWatcherSagaShouldTakeEvery,
-} from '../../../utils/testing/TestUtils';
+} from '~/common/testing/TestUtils';
+import { GET_EDM_TYPES } from '~/core/edm/actions';
+import { getEntityDataModelTypesWorker } from '~/core/edm/sagas';
+
+import { initializeApplicationWatcher, initializeApplicationWorker } from './initializeApplication';
+
 import { INITIALIZE_APPLICATION, initializeApplication } from '../actions';
 
 const { GET_ALL_ORGANIZATIONS } = OrganizationsApiActions;

@@ -12,7 +12,8 @@ import {
   ORG_DATA_SETS,
   ORG_DATA_SET_COLUMNS,
   REQUEST_STATE,
-} from '../../../common/constants';
+} from '~/common/constants';
+
 import { UPDATE_ORGANIZATION_DATA_SET, updateOrganizationDataSet } from '../actions';
 
 const { isValidUUID } = ValidationUtils;

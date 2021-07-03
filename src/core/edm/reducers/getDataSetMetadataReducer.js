@@ -14,7 +14,7 @@ import {
   ORGANIZATION_ID,
   ORG_DATA_SETS,
   REQUEST_STATE,
-} from '../../../common/constants';
+} from '~/common/constants';
 
 const { GET_DATA_SET_METADATA, getDataSetMetadata } = DataSetMetadataApiActions;
 

@@ -23,8 +23,6 @@ import type {
 import type { WorkerResponse } from 'lattice-sagas';
 import type { SequenceAction } from 'redux-reqseq';
 
-import { getPermissionsWorker } from './getPermissions';
-
 import {
   ERR_MISSING_ORG,
   FLAGS,
@@ -33,13 +31,16 @@ import {
   PAGE_PERMISSIONS_BY_DATA_SET,
   TITLE,
   TOTAL_PERMISSIONS,
-} from '../../../common/constants';
+} from '~/common/constants';
 import {
   selectOrgDataSets,
   selectOrgDataSetsColumns,
   selectOrganization,
   selectPrincipalPermissions,
-} from '../../redux/selectors';
+} from '~/core/redux/selectors';
+
+import { getPermissionsWorker } from './getPermissions';
+
 import { GET_DATA_SET_PERMISSIONS_PAGE, getDataSetPermissionsPage, getPermissions } from '../actions';
 
 const { getDataSetColumnsMetadata, getOrganizationDataSetsMetadata } = DataSetMetadataApiActions;

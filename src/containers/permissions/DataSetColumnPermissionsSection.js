@@ -22,14 +22,14 @@ import type {
 } from 'lattice';
 import type { RequestState } from 'redux-reqseq';
 
-import { PermissionsLock } from './components';
+import { ID, PERMISSIONS } from '~/common/constants';
+import { SpaceBetweenGrid, Spinner } from '~/components';
+import { UPDATE_PERMISSIONS, updatePermissions } from '~/core/permissions/actions';
+import { computePermissionAssignments } from '~/core/permissions/utils';
+import { resetRequestStates } from '~/core/redux/actions';
+import { selectMyKeys, selectPropertyTypes } from '~/core/redux/selectors';
 
-import { ID, PERMISSIONS } from '../../common/constants';
-import { SpaceBetweenGrid, Spinner } from '../../components';
-import { UPDATE_PERMISSIONS, updatePermissions } from '../../core/permissions/actions';
-import { computePermissionAssignments } from '../../core/permissions/utils';
-import { resetRequestStates } from '../../core/redux/actions';
-import { selectMyKeys, selectPropertyTypes } from '../../core/redux/selectors';
+import { PermissionsLock } from './components';
 
 const { NEUTRAL, PURPLE } = Colors;
 const { AceBuilder } = Models;

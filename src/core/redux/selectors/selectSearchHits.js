@@ -4,7 +4,7 @@
 
 import { List, Map, getIn } from 'immutable';
 
-import { HITS, SEARCH } from '../../../common/constants';
+import { HITS, SEARCH } from '~/common/constants';
 
 export default function selectSearchHits(action :string) {
 

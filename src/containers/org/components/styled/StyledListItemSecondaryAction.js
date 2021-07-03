@@ -1,6 +1,8 @@
-// @flow
+/*
+ * @flow
+ */
+
 import styled from 'styled-components';
-// $FlowFixMe
 import { ListItemSecondaryAction } from 'lattice-ui-kit';
 
 const StyledListItemSecondaryAction = styled(ListItemSecondaryAction)`

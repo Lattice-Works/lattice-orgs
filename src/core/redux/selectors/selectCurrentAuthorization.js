@@ -2,14 +2,10 @@
  * @flow
  */
 
-import {
-  List,
-  Map,
-  getIn
-} from 'immutable';
+import { List, Map, getIn } from 'immutable';
 import type { PermissionType } from 'lattice';
 
-import { CURRENT, PERMISSIONS } from '../../../common/constants';
+import { CURRENT, PERMISSIONS } from '~/common/constants';
 
 export default function selectCurrentAuthorization(acl :List, permission :PermissionType) {
 

@@ -1,9 +1,10 @@
 import { fromJS } from 'immutable';
 import { RequestStates } from 'redux-reqseq';
 
+import { RS_INITIAL_STATE } from '~/common/constants';
+
 import reducer from './initializeApplicationReducer';
 
-import { RS_INITIAL_STATE } from '../../../common/constants';
 import { INITIALIZE_APPLICATION, initializeApplication } from '../actions';
 
 const MOCK_APP_NAME = 'TestApp';

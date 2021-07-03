@@ -17,11 +17,11 @@ import { Select } from 'lattice-ui-kit';
 import { ReduxUtils, useRequestState } from 'lattice-utils';
 import { useDispatch, useSelector } from 'react-redux';
 
-import { USERS } from '../../../common/constants';
-import { getUserProfile, getUserTitle } from '../../../common/utils';
-import { selectUserSearchResults } from '../../../core/redux/selectors';
-import { SEARCH_ALL_USERS, resetUserSearchResults, searchAllUsers } from '../../../core/users/actions';
-import type { ReactSelectOption } from '../../../common/types';
+import { USERS } from '~/common/constants';
+import { getUserProfile, getUserTitle } from '~/common/utils';
+import { selectUserSearchResults } from '~/core/redux/selectors';
+import { SEARCH_ALL_USERS, resetUserSearchResults, searchAllUsers } from '~/core/users/actions';
+import type { ReactSelectOption } from '~/common/types';
 
 const { isPending } = ReduxUtils;
 

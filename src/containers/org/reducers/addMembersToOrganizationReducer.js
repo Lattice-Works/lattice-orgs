@@ -6,7 +6,7 @@ import { Map } from 'immutable';
 import { RequestStates } from 'redux-reqseq';
 import type { SequenceAction } from 'redux-reqseq';
 
-import { REQUEST_STATE } from '../../../common/constants';
+import { REQUEST_STATE } from '~/common/constants';
 import { ADD_MEMBERS_TO_ORGANIZATION, addMembersToOrganization } from '../actions';
 
 export default function addMembersToOrganizationReducer(state :Map, action :SequenceAction) {

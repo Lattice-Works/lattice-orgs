@@ -27,13 +27,13 @@ import type { RequestState } from 'redux-reqseq';
 import { INITIALIZE_APPLICATION, initializeApplication } from './actions';
 
 import { OpenLatticeIconSVG } from '../../assets/svg/icons';
-import { APP } from '../../common/constants';
+import { APP } from '~/common/constants';
 import { BasicErrorComponent } from '../../components';
-import { Routes } from '../../core/router';
+import { Routes } from '~/core/router';
 import { AccountContainer } from '../account';
 import { OrgRouter, OrgsContainer } from '../org';
 
-// import { GOOGLE_TRACKING_ID } from '../../core/tracking/google/GoogleAnalytics';
+// import { GOOGLE_TRACKING_ID } from '~/core/tracking/google/GoogleAnalytics';
 
 declare var gtag :?Function;
 

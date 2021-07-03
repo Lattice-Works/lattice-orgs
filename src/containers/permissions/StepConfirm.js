@@ -9,7 +9,7 @@ import { Typography } from 'lattice-ui-kit';
 import { ReduxUtils } from 'lattice-utils';
 import type { RequestState } from 'redux-reqseq';
 
-import { BasicErrorComponent, StackGrid } from '../../components';
+import { BasicErrorComponent, StackGrid } from '~/components';
 
 const {
   isFailure,

@@ -27,29 +27,29 @@ import { RequestStates } from 'redux-reqseq';
 import type { UUID } from 'lattice';
 import type { RequestState } from 'redux-reqseq';
 
-import EntityDataModal from '../explore/components/EntityDataModal';
+import EntityDataModal from '~/containers/explore/components/EntityDataModal';
 import {
   MAX_HITS_10,
   METADATA,
   NAME,
   SEARCH,
   TITLE,
-} from '../../common/constants';
+} from '~/common/constants';
 import {
   DataTableWrapper,
   SearchForm,
   Spinner,
   StackGrid,
   ValueCell,
-} from '../../components';
+} from '~/components';
 import {
   selectOrgDataSetColumns,
   selectSearchHits,
   selectSearchPage,
   selectSearchQuery,
   selectSearchTotalHits,
-} from '../../core/redux/selectors';
-import { SEARCH_DATA, clearSearchState, searchData } from '../../core/search/actions';
+} from '~/core/redux/selectors';
+import { SEARCH_DATA, clearSearchState, searchData } from '~/core/search/actions';
 
 const { getEntityKeyId } = DataUtils;
 const { isNonEmptyString } = LangUtils;

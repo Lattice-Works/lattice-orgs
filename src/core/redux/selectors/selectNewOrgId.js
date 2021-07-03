@@ -5,7 +5,7 @@
 import { Map, getIn } from 'immutable';
 import type { UUID } from 'lattice';
 
-import { NEW_ORGANIZATION_ID, ORGANIZATIONS } from '../../../common/constants';
+import { NEW_ORGANIZATION_ID, ORGANIZATIONS } from '~/common/constants';
 
 export default function selectNewOrgId() {
 

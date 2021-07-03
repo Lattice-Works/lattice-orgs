@@ -10,7 +10,8 @@ import {
   CURRENT_ROLE_AUTHORIZATIONS,
   ERROR,
   REQUEST_STATE,
-} from '../../../common/constants';
+} from '~/common/constants';
+
 import {
   GET_CURRENT_ROLE_AUTHORIZATIONS,
   getCurrentRoleAuthorizations,

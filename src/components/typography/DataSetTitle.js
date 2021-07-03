@@ -7,9 +7,10 @@ import React from 'react';
 import { Typography } from 'lattice-ui-kit';
 import type { Map } from 'immutable';
 
-import { AtlasDataSetIcon, EntitySetIcon } from '../../assets/svg/icons';
-import { METADATA, NAME, TITLE } from '../../common/constants';
-import { isEntitySet } from '../../common/utils';
+import { AtlasDataSetIcon, EntitySetIcon } from '~/assets/svg/icons';
+import { METADATA, NAME, TITLE } from '~/common/constants';
+import { isEntitySet } from '~/common/utils';
+
 import { GapGrid } from '../grids';
 
 const DataSetTitle = ({

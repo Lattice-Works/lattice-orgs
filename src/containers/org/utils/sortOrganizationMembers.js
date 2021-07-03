@@ -4,7 +4,7 @@
 
 import { Map } from 'immutable';
 
-import { getUserTitle } from '../../../common/utils';
+import { getUserTitle } from '~/common/utils';
 
 export default function sortOrganizationMembers(user1 :Object | Map, user2 :Object | Map) {
 

@@ -26,12 +26,12 @@ import {
   DATA_SET_PERMISSIONS_PAGE,
   MY_KEYS,
   RS_INITIAL_STATE,
-} from '../../../common/constants';
+} from '~/common/constants';
 import {
   createNewOrganization,
   deleteExistingOrganization,
   initializeOrganization,
-} from '../../../containers/org/actions';
+} from '~/containers/org/actions';
 import { initializeOrganizationDataSet } from '../../edm/actions';
 import { RESET_REQUEST_STATES } from '../../redux/actions';
 import { resetRequestStatesReducer } from '../../redux/reducers';

@@ -5,7 +5,7 @@
 import { Map, Set } from 'immutable';
 import type { UUID } from 'lattice';
 
-import { DATA, ENTITY_SET_DATA } from '../../../common/constants';
+import { DATA, ENTITY_SET_DATA } from '~/common/constants';
 
 export default function selectStoredEntityKeyIds(entitySetId :UUID, entityKeyIds :Set<UUID>) {
   return (state :Map) :Set<UUID> => (

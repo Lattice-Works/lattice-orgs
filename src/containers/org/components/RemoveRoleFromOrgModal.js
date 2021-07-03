@@ -8,7 +8,8 @@ import { Modal, Typography } from 'lattice-ui-kit';
 import { useDispatch } from 'react-redux';
 import type { UUID } from 'lattice';
 
-import { ResetOnUnmount } from '../../../components';
+import { ResetOnUnmount } from '~/components';
+
 import { REMOVE_ROLE_FROM_ORGANIZATION, removeRoleFromOrganization } from '../actions';
 
 const RESET_ACTIONS = [REMOVE_ROLE_FROM_ORGANIZATION];

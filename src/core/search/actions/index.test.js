@@ -1,7 +1,8 @@
 import { OrderedSet } from 'immutable';
 
+import { testShouldExportActionTypes, testShouldExportRequestSequences } from '~/common/testing/TestUtils';
+
 import * as SearchActions from '.';
-import { testShouldExportActionTypes, testShouldExportRequestSequences } from '../../../utils/testing/TestUtils';
 
 const ACTION_TYPES = OrderedSet([
   'SEARCH_DATA',

@@ -1,4 +1,7 @@
-// @flow
+/*
+ * @flow
+ */
+
 import { useLayoutEffect, useState } from 'react';
 import type { ElementRef } from 'react';
 

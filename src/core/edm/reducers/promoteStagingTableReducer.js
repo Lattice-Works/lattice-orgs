@@ -12,7 +12,7 @@ import {
   ERROR,
   OPENLATTICE,
   REQUEST_STATE,
-} from '../../../common/constants';
+} from '~/common/constants';
 
 const { PROMOTE_STAGING_TABLE, promoteStagingTable } = OrganizationsApiActions;
 

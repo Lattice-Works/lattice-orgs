@@ -5,20 +5,21 @@
 import { Map, fromJS } from 'immutable';
 import { matchPath } from 'react-router';
 
+import { ENTITY_NEIGHBORS_MAP, RS_INITIAL_STATE, SELECTED_ENTITY_DATA } from '~/common/constants';
+import { RESET_REQUEST_STATES } from '~/core/redux/actions';
+import { resetRequestStatesReducer } from '~/core/redux/reducers';
+import { Routes, RoutingActions } from '~/core/router';
+import type { RoutingAction } from '~/core/router/actions';
+
 import exploreEntityDataReducer from './exploreEntityDataReducer';
 import exploreEntityNeighborsReducer from './exploreEntityNeighborsReducer';
 
-import { ENTITY_NEIGHBORS_MAP, RS_INITIAL_STATE, SELECTED_ENTITY_DATA } from '../../../common/constants';
-import { RESET_REQUEST_STATES } from '../../../core/redux/actions';
-import { resetRequestStatesReducer } from '../../../core/redux/reducers';
-import { Routes, RoutingActions } from '../../../core/router';
 import {
   EXPLORE_ENTITY_DATA,
   EXPLORE_ENTITY_NEIGHBORS,
   exploreEntityData,
   exploreEntityNeighbors,
 } from '../actions';
-import type { RoutingAction } from '../../../core/router/actions';
 
 const { GO_TO_ROUTE } = RoutingActions;
 

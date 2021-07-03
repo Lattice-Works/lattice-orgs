@@ -5,7 +5,7 @@
 import { List, Map, getIn } from 'immutable';
 import type { Ace, Principal, UUID } from 'lattice';
 
-import { ACES, PERMISSIONS } from '../../../common/constants';
+import { ACES, PERMISSIONS } from '~/common/constants';
 
 export default function selectPrincipalPermissions(keys :List<List<UUID>>, principal :Principal) {
 

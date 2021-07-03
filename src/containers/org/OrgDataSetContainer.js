@@ -21,18 +21,14 @@ import { Route, Switch } from 'react-router';
 import { NavLink } from 'react-router-dom';
 import type { Organization, UUID } from 'lattice';
 
-import DataSetActionButton from './components/dataset/DataSetActionButton';
-import DataSetDataContainer from './DataSetDataContainer';
-import DataSetMetadataContainer from './DataSetMetadataContainer';
-
 import {
   CONTACTS,
   DESCRIPTION,
   METADATA,
   NAME,
   TITLE,
-} from '../../common/constants';
-import { isEntitySet } from '../../common/utils';
+} from '~/common/constants';
+import { isEntitySet } from '~/common/utils';
 import {
   CrumbItem,
   CrumbLink,
@@ -40,15 +36,19 @@ import {
   NavContentWrapper,
   SpaceBetweenGrid,
   StackGrid,
-} from '../../components';
+} from '~/components';
 import {
   selectDataSetSchema,
   selectOrgDataSet,
   selectOrgDataSetColumns,
   selectOrgDataSetSize,
   selectOrganization
-} from '../../core/redux/selectors';
-import { Routes } from '../../core/router';
+} from '~/core/redux/selectors';
+import { Routes } from '~/core/router';
+
+import DataSetActionButton from './components/dataset/DataSetActionButton';
+import DataSetDataContainer from './DataSetDataContainer';
+import DataSetMetadataContainer from './DataSetMetadataContainer';
 
 const { BLUE } = Colors;
 const { isDefined, isNonEmptyString } = LangUtils;

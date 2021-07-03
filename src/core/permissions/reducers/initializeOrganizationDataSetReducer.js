@@ -6,7 +6,8 @@ import { List, Map } from 'immutable';
 import type { UUID } from 'lattice';
 import type { SequenceAction } from 'redux-reqseq';
 
-import { DATA_SET_ID, IS_OWNER, MY_KEYS } from '../../../common/constants';
+import { DATA_SET_ID, IS_OWNER, MY_KEYS } from '~/common/constants';
+
 import { initializeOrganizationDataSet } from '../../edm/actions';
 
 export default function reducer(state :Map, action :SequenceAction) {

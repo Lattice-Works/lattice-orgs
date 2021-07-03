@@ -6,7 +6,7 @@ import { Map, getIn } from 'immutable';
 import { ValidationUtils } from 'lattice-utils';
 import type { UUID } from 'lattice';
 
-import { EDM, ENTITY_SET_SIZE_MAP } from '../../../common/constants';
+import { EDM, ENTITY_SET_SIZE_MAP } from '~/common/constants';
 
 const { isValidUUID } = ValidationUtils;
 

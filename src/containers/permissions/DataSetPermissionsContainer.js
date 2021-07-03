@@ -23,8 +23,6 @@ import type {
 } from 'lattice';
 import type { RequestState } from 'redux-reqseq';
 
-import DataSetPermissionsCard from './DataSetPermissionsCard';
-
 import {
   MAX_HITS_10,
   PAGE,
@@ -32,17 +30,19 @@ import {
   PERMISSIONS,
   RESET,
   TOTAL_PERMISSIONS,
-} from '../../common/constants';
-import { Spinner, StackGrid } from '../../components';
+} from '~/common/constants';
+import { Spinner, StackGrid } from '~/components';
 import {
   ASSIGN_PERMISSIONS_TO_DATA_SET,
   GET_DATA_SET_PERMISSIONS_PAGE,
   SET_PERMISSIONS,
   getDataSetPermissionsPage,
-} from '../../core/permissions/actions';
-import { resetRequestStates } from '../../core/redux/actions';
-import { selectDataSetPermissionsPage } from '../../core/redux/selectors';
-import type { DataSetPermissionTypeSelection } from '../../common/types';
+} from '~/core/permissions/actions';
+import { resetRequestStates } from '~/core/redux/actions';
+import { selectDataSetPermissionsPage } from '~/core/redux/selectors';
+import type { DataSetPermissionTypeSelection } from '~/common/types';
+
+import DataSetPermissionsCard from './DataSetPermissionsCard';
 
 const {
   GET_DATA_SET_COLUMNS_METADATA,

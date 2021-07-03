@@ -21,11 +21,12 @@ import type { UUID } from 'lattice';
 import type { WorkerResponse } from 'lattice-sagas';
 import type { SequenceAction } from 'redux-reqseq';
 
-import { APPS, IS_OWNER, ORGANIZATION_ID } from '../../../common/constants';
-import { isAppInstalled } from '../../../core/edm/actions';
-import { isAppInstalledWorker } from '../../../core/edm/sagas';
+import { APPS, IS_OWNER, ORGANIZATION_ID } from '~/common/constants';
+import { isAppInstalled } from '~/core/edm/actions';
+import { isAppInstalledWorker } from '~/core/edm/sagas';
+import type { AuthorizationObject } from '~/common/types';
+
 import { INITIALIZE_ORGANIZATION, initializeOrganization } from '../actions';
-import type { AuthorizationObject } from '../../../common/types';
 
 const { AccessCheck, AccessCheckBuilder } = Models;
 const { PermissionTypes } = Types;

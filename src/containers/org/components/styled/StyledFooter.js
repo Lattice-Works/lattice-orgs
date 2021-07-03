@@ -1,4 +1,7 @@
-// @flow
+/*
+ * @flow
+ */
+
 import styled from 'styled-components';
 import { ModalFooter } from 'lattice-ui-kit';
 

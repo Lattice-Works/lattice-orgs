@@ -13,7 +13,7 @@ import {
   ERROR,
   INTEGRATION_DETAILS,
   REQUEST_STATE
-} from '../../../common/constants';
+} from '~/common/constants';
 
 const { RENAME_ORGANIZATION_DATABASE, renameOrganizationDatabase } = OrganizationsApiActions;
 

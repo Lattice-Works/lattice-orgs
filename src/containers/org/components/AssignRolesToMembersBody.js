@@ -10,13 +10,14 @@ import { useDispatch } from 'react-redux';
 import type { Role, UUID } from 'lattice';
 import type { RequestState } from 'redux-reqseq';
 
+import { ORGANIZATIONS } from '~/common/constants';
+import { getUserProfile } from '~/common/utils';
+import { ModalBody, ResetOnUnmount } from '~/components';
+import { StepConfirm } from '~/containers/permissions';
+
 import SelectRoles from './SelectRoles';
 import StyledFooter from './styled/StyledFooter';
 
-import StepConfirm from '../../permissions/StepConfirm';
-import { ORGANIZATIONS } from '../../../common/constants';
-import { getUserProfile } from '../../../common/utils';
-import { ModalBody, ResetOnUnmount } from '../../../components';
 import { ASSIGN_ROLES_TO_MEMBERS, assignRolesToMembers } from '../actions';
 
 const { isPending, isSuccess } = ReduxUtils;

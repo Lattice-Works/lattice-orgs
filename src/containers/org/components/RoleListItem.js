@@ -1,14 +1,13 @@
-// @flow
+/*
+ * @flow
+ */
 
 import React from 'react';
 
 import {
-  // $FlowFixMe[missing-export]
   Avatar,
   Checkbox,
-  // $FlowFixMe[missing-export]
   ListItem,
-  // $FlowFixMe[missing-export]
   ListItemAvatar,
   Typography,
 } from 'lattice-ui-kit';

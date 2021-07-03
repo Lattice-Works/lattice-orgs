@@ -12,9 +12,10 @@ import { RequestStates } from 'redux-reqseq';
 import type { Organization, Role, UUID } from 'lattice';
 import type { RequestState } from 'redux-reqseq';
 
-import { ORGANIZATIONS } from '../../../common/constants';
-import { ModalBody } from '../../../components';
-import { resetRequestStates } from '../../../core/redux/actions';
+import { ORGANIZATIONS } from '~/common/constants';
+import { ModalBody } from '~/components';
+import { resetRequestStates } from '~/core/redux/actions';
+
 import { ADD_ROLE_TO_ORGANIZATION, addRoleToOrganization } from '../actions';
 
 const { isNonEmptyString } = LangUtils;

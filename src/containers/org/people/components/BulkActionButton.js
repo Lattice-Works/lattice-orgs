@@ -1,25 +1,20 @@
-// @flow
+/*
+ * @flow
+ */
+
 import React, { useState } from 'react';
 
 import { faAngleDown } from '@fortawesome/pro-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  Button,
-  // $FlowFixMe[missing-export]
-  Menu,
-  // $FlowFixMe[missing-export]
-  MenuItem,
-} from 'lattice-ui-kit';
+import { Button, Menu, MenuItem } from 'lattice-ui-kit';
 
 const ChevronDown = <FontAwesomeIcon icon={faAngleDown} />;
 
-type Props = {
-  onAddRolesClick :() => void;
-};
-
 const BulkActionButton = ({
   onAddRolesClick
-} :Props) => {
+} :{|
+  onAddRolesClick :() => void;
+|}) => {
   const [menuAnchorEl, setMenuAnchorEl] = useState(null);
 
   const handleButtonOnClick = (event :SyntheticEvent<HTMLButtonElement>) => {

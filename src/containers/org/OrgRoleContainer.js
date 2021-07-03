@@ -10,24 +10,24 @@ import { LangUtils } from 'lattice-utils';
 import { useDispatch, useSelector } from 'react-redux';
 import type { Organization, Role, UUID } from 'lattice';
 
-import { RoleActionButton } from './components';
-
 import {
   CrumbItem,
   CrumbLink,
   Crumbs,
   SpaceBetweenGrid,
   StackGrid,
-} from '../../components';
-import { selectOrganization } from '../../core/redux/selectors';
-import { Routes } from '../../core/router';
-import { goToRoute } from '../../core/router/actions';
+} from '~/components';
 import {
   AssignPermissionsToDataSetModalBody,
   DataSetPermissionsContainer,
   PermissionsActionsGrid,
   PermissionsPanel,
-} from '../permissions';
+} from '~/containers/permissions';
+import { selectOrganization } from '~/core/redux/selectors';
+import { Routes } from '~/core/router';
+import { goToRoute } from '~/core/router/actions';
+
+import { RoleActionButton } from './components';
 
 const { isNonEmptyString } = LangUtils;
 

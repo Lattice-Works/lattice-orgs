@@ -11,21 +11,13 @@ import { useDispatch, useSelector } from 'react-redux';
 import type { FQN, Organization, UUID } from 'lattice';
 import type { RequestState } from 'redux-reqseq';
 
-import EntityNeighborsContainer from './EntityNeighborsContainer';
-import {
-  EXPLORE_ENTITY_DATA,
-  exploreEntityData,
-  exploreEntityNeighbors
-} from './actions';
-import { EntityDataGrid } from './components';
-
 import {
   EXPLORE,
   METADATA,
   NAME,
   TITLE,
-} from '../../common/constants';
-import { clipboardWriteText } from '../../common/utils';
+} from '~/common/constants';
+import { clipboardWriteText } from '~/common/utils';
 import {
   CrumbItem,
   CrumbLink,
@@ -34,14 +26,22 @@ import {
   SpaceBetweenGrid,
   Spinner,
   StackGrid,
-} from '../../components';
+} from '~/components';
 import {
   selectEntityNeighborsMap,
   selectOrgDataSet,
   selectOrganization,
   selectSelectedEntityData
-} from '../../core/redux/selectors';
-import { Routes } from '../../core/router';
+} from '~/core/redux/selectors';
+import { Routes } from '~/core/router';
+
+import EntityNeighborsContainer from './EntityNeighborsContainer';
+import {
+  EXPLORE_ENTITY_DATA,
+  exploreEntityData,
+  exploreEntityNeighbors
+} from './actions';
+import { EntityDataGrid } from './components';
 
 const { isPending } = ReduxUtils;
 

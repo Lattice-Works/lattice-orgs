@@ -4,7 +4,7 @@
 
 import { Map, getIn } from 'immutable';
 
-import { SEARCH, TOTAL_HITS } from '../../../common/constants';
+import { SEARCH, TOTAL_HITS } from '~/common/constants';
 
 export default function selectSearchTotalHits(action :string) {
 

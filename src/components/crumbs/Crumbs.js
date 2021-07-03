@@ -18,11 +18,7 @@ const CrumbsWrapper = styled(Breadcrumbs).attrs({ separator: Separator })`
   margin-bottom: 24px;
 `;
 
-type Props = {
-  children :Node;
-};
-
-const Crumbs = ({ children } :Props) => (
+const Crumbs = ({ children } :{ children :Node }) => (
   <CrumbsWrapper>
     {children}
   </CrumbsWrapper>

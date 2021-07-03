@@ -1,4 +1,7 @@
-// @flow
+/*
+ * @flow
+ */
+
 import { List, Map, Set } from 'immutable';
 
 export default function memberHasSelectedRoles(member :Map, selectedRoles :Set) {

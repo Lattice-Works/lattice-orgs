@@ -9,7 +9,7 @@ import { RequestStates } from 'redux-reqseq';
 import type { OrganizationObject, UUID } from 'lattice';
 import type { SequenceAction } from 'redux-reqseq';
 
-import { ERROR, ORGANIZATIONS, REQUEST_STATE } from '../../../common/constants';
+import { ERROR, ORGANIZATIONS, REQUEST_STATE } from '~/common/constants';
 
 const { Organization, OrganizationBuilder } = Models;
 const { GET_ALL_ORGANIZATIONS, getAllOrganizations } = OrganizationsApiActions;

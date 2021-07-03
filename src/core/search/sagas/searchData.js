@@ -11,7 +11,8 @@ import type { UUID } from 'lattice';
 import type { WorkerResponse } from 'lattice-sagas';
 import type { SequenceAction } from 'redux-reqseq';
 
-import { HITS, MAX_HITS_10, TOTAL_HITS } from '../../../common/constants';
+import { HITS, MAX_HITS_10, TOTAL_HITS } from '~/common/constants';
+
 import { SEARCH_DATA, searchData } from '../actions';
 
 const { searchEntitySetData } = SearchApiActions;

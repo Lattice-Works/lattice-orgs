@@ -11,22 +11,22 @@ import { AppContentWrapper, Typography } from 'lattice-ui-kit';
 import { useDispatch, useSelector } from 'react-redux';
 import type { Organization, UUID } from 'lattice';
 
-import PeopleTable from './PeopleTable';
-
 import {
   CrumbItem,
   CrumbLink,
   Crumbs,
   Divider,
-} from '../../../components';
+} from '~/components';
 import {
   GET_CURRENT_ROLE_AUTHORIZATIONS,
   getCurrentRoleAuthorizations,
   resetCurrentRoleAuthorizations,
-} from '../../../core/permissions/actions';
-import { resetRequestStates } from '../../../core/redux/actions';
-import { selectMyKeys, selectOrganization, selectOrganizationMembers } from '../../../core/redux/selectors';
-import { resetUserSearchResults } from '../../../core/users/actions';
+} from '~/core/permissions/actions';
+import { resetRequestStates } from '~/core/redux/actions';
+import { selectMyKeys, selectOrganization, selectOrganizationMembers } from '~/core/redux/selectors';
+import { resetUserSearchResults } from '~/core/users/actions';
+
+import PeopleTable from './PeopleTable';
 
 const { PermissionTypes } = Types;
 

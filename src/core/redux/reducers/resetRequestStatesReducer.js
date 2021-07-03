@@ -5,7 +5,8 @@
 import { Map } from 'immutable';
 import { RequestStates } from 'redux-reqseq';
 
-import { ERROR, REQUEST_STATE } from '../../../common/constants';
+import { ERROR, REQUEST_STATE } from '~/common/constants';
+
 import type { ResetRequestStatesAction } from '../actions';
 
 export default function reducer(state :Map, action :ResetRequestStatesAction) {

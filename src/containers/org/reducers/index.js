@@ -30,9 +30,9 @@ import {
   NEW_ORGANIZATION_ID,
   ORGANIZATIONS,
   RS_INITIAL_STATE,
-} from '../../../common/constants';
-import { RESET_REQUEST_STATES } from '../../../core/redux/actions';
-import { resetRequestStatesReducer } from '../../../core/redux/reducers';
+} from '~/common/constants';
+import { RESET_REQUEST_STATES } from '~/core/redux/actions';
+import { resetRequestStatesReducer } from '~/core/redux/reducers';
 import {
   ADD_MEMBERS_TO_ORGANIZATION,
   ADD_ROLE_TO_ORGANIZATION,

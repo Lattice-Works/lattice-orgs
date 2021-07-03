@@ -26,8 +26,8 @@ import { RequestStates } from 'redux-reqseq';
 import type { Organization, UUID } from 'lattice';
 import type { RequestState } from 'redux-reqseq';
 
-import { ORGANIZATIONS } from '../../../common/constants';
-import { clipboardWriteText } from '../../../common/utils';
+import { ORGANIZATIONS } from '~/common/constants';
+import { clipboardWriteText } from '~/common/utils';
 import {
   ActionsGrid,
   CopyButton,
@@ -38,18 +38,19 @@ import {
   Pre,
   Spinner,
   StackGrid,
-} from '../../../components';
-import { resetRequestStates } from '../../../core/redux/actions';
+} from '~/components';
+import { resetRequestStates } from '~/core/redux/actions';
 import {
   selectMyKeys,
   selectOrganization,
   selectOrganizationIntegrationDetails,
-} from '../../../core/redux/selectors';
+} from '~/core/redux/selectors';
+import type { SagaError } from '~/common/types';
+
 import { GET_ORGANIZATION_INTEGRATION_DETAILS, getOrganizationIntegrationDetails } from '../actions';
 import { RenameOrgDatabaseModal } from '../components';
 import { DBMS_TYPES } from '../constants';
 import { generateIntegrationConfig } from '../utils';
-import type { SagaError } from '../../../common/types';
 
 const dataSchema = {
   properties: {

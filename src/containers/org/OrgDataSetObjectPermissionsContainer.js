@@ -9,18 +9,18 @@ import { AppContentWrapper, Typography } from 'lattice-ui-kit';
 import { useDispatch, useSelector } from 'react-redux';
 import type { Organization, UUID } from 'lattice';
 
-import { METADATA, NAME, TITLE } from '../../common/constants';
+import { METADATA, NAME, TITLE } from '~/common/constants';
 import {
   CrumbItem,
   CrumbLink,
   Crumbs,
   Divider,
   StackGrid,
-} from '../../components';
-import { GET_ORG_DATA_SET_OBJECT_PERMISSIONS } from '../../core/permissions/actions';
-import { resetRequestStates } from '../../core/redux/actions';
-import { selectOrgDataSet, selectOrganization } from '../../core/redux/selectors';
-import { ObjectPermissionsContainer, PermissionsActionsGrid } from '../permissions';
+} from '~/components';
+import { ObjectPermissionsContainer, PermissionsActionsGrid } from '~/containers/permissions';
+import { GET_ORG_DATA_SET_OBJECT_PERMISSIONS } from '~/core/permissions/actions';
+import { resetRequestStates } from '~/core/redux/actions';
+import { selectOrgDataSet, selectOrganization } from '~/core/redux/selectors';
 
 const OrgDataSetObjectPermissionsContainer = ({
   dataSetId,

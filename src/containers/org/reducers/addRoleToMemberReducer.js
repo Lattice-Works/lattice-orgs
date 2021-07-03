@@ -14,7 +14,7 @@ import {
   MEMBERS,
   ORGANIZATIONS,
   REQUEST_STATE,
-} from '../../../common/constants';
+} from '~/common/constants';
 
 const { ADD_ROLE_TO_MEMBER, addRoleToMember } = OrganizationsApiActions;
 const { getUserId } = PersonUtils;

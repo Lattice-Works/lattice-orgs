@@ -11,7 +11,8 @@ import {
   APP_INSTALLS,
   ERROR,
   REQUEST_STATE,
-} from '../../../common/constants';
+} from '~/common/constants';
+
 import { IS_APP_INSTALLED, isAppInstalled } from '../actions';
 
 export default function reducer(state :Map, action :SequenceAction) {

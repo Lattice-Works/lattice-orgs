@@ -4,7 +4,7 @@
 
 import { Map, getIn } from 'immutable';
 
-import { PAGE, SEARCH } from '../../../common/constants';
+import { PAGE, SEARCH } from '~/common/constants';
 
 export default function selectSearchPage(action :string) {
 

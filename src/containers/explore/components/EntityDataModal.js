@@ -15,9 +15,10 @@ import { ReduxUtils, useRequestState } from 'lattice-utils';
 import type { UUID } from 'lattice';
 import type { RequestState } from 'redux-reqseq';
 
+import { EXPLORE } from '~/common/constants';
+import { ModalBody } from '~/components';
+
 import EntityDataContainer from '../EntityDataContainer';
-import { EXPLORE } from '../../../common/constants';
-import { ModalBody } from '../../../components';
 import { EXPLORE_ENTITY_DATA, EXPLORE_ENTITY_NEIGHBORS } from '../actions';
 
 const { NEUTRAL } = Colors;

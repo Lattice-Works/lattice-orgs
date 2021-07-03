@@ -17,9 +17,9 @@ import {
 import { useSelector } from 'react-redux';
 import type { UUID } from 'lattice';
 
-import { METADATA, NAME, TITLE } from '../../../common/constants';
-import { Flip } from '../../../components';
-import { selectOrgDataSetColumns } from '../../../core/redux/selectors';
+import { METADATA, NAME, TITLE } from '~/common/constants';
+import { Flip } from '~/components';
+import { selectOrgDataSetColumns } from '~/core/redux/selectors';
 
 const { NEUTRAL, PURPLE } = Colors;
 

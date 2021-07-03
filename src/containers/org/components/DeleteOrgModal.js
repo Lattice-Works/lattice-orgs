@@ -15,9 +15,10 @@ import { useDispatch } from 'react-redux';
 import type { UUID } from 'lattice';
 import type { RequestState } from 'redux-reqseq';
 
-import { ORGANIZATIONS } from '../../../common/constants';
-import { ModalBody, ResetOnUnmount } from '../../../components';
-import { resetRequestStates } from '../../../core/redux/actions';
+import { ORGANIZATIONS } from '~/common/constants';
+import { ModalBody, ResetOnUnmount } from '~/components';
+import { resetRequestStates } from '~/core/redux/actions';
+
 import { DELETE_EXISTING_ORGANIZATION, deleteExistingOrganization } from '../actions';
 
 const {

@@ -8,7 +8,7 @@ import { RequestStates } from 'redux-reqseq';
 import type { Organization, UUID } from 'lattice';
 import type { SequenceAction } from 'redux-reqseq';
 
-import { ERROR, ORGANIZATIONS, REQUEST_STATE } from '../../../common/constants';
+import { ERROR, ORGANIZATIONS, REQUEST_STATE } from '~/common/constants';
 import { REMOVE_ROLE_FROM_ORGANIZATION, removeRoleFromOrganization } from '../actions';
 
 const { OrganizationBuilder } = Models;

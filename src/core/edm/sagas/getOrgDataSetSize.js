@@ -15,8 +15,9 @@ import type { Organization, UUID } from 'lattice';
 import type { WorkerResponse } from 'lattice-sagas';
 import type { SequenceAction } from 'redux-reqseq';
 
-import { ERR_MISSING_ORG } from '../../../common/constants';
-import { selectOrganization } from '../../redux/selectors';
+import { ERR_MISSING_ORG } from '~/common/constants';
+import { selectOrganization } from '~/core/redux/selectors';
+
 import { GET_ORG_DATA_SET_SIZE, getOrgDataSetSize } from '../actions';
 
 const { getEntitySetSize } = DataApiActions;

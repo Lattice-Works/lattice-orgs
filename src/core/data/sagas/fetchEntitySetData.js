@@ -19,8 +19,9 @@ import type { UUID } from 'lattice';
 import type { WorkerResponse } from 'lattice-sagas';
 import type { SequenceAction } from 'redux-reqseq';
 
+import { selectStoredEntityKeyIds } from '~/core/redux/selectors';
+
 import { FETCH_ENTITY_SET_DATA, fetchEntitySetData } from '../actions';
-import { selectStoredEntityKeyIds } from '../../redux/selectors';
 
 const LOG = new Logger('DataSagas');
 

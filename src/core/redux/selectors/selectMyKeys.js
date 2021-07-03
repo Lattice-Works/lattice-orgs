@@ -10,7 +10,7 @@ import {
 } from 'immutable';
 import type { UUID } from 'lattice';
 
-import { MY_KEYS, PERMISSIONS } from '../../../common/constants';
+import { MY_KEYS, PERMISSIONS } from '~/common/constants';
 
 export default function selectMyKeys() {
 

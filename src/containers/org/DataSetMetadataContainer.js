@@ -16,8 +16,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import type { UUID } from 'lattice';
 import type { RequestState } from 'redux-reqseq';
 
-import EditableMetadataRow from './components/EditableMetadataRow';
-
 import {
   DATA_TYPE,
   DESCRIPTION,
@@ -27,10 +25,12 @@ import {
   ID,
   METADATA,
   TITLE,
-} from '../../common/constants';
-import { UpdateMetaModal } from '../../components';
-import { UPDATE_ORGANIZATION_DATA_SET, updateOrganizationDataSet } from '../../core/edm/actions';
-import { selectMyKeys, selectOrgDataSetColumns } from '../../core/redux/selectors';
+} from '~/common/constants';
+import { UpdateMetaModal } from '~/components';
+import { UPDATE_ORGANIZATION_DATA_SET, updateOrganizationDataSet } from '~/core/edm/actions';
+import { selectMyKeys, selectOrgDataSetColumns } from '~/core/redux/selectors';
+
+import EditableMetadataRow from './components/EditableMetadataRow';
 
 const TABLE_HEADERS = [
   { key: 'title', label: 'TITLE' },

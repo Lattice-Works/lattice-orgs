@@ -1,9 +1,11 @@
-// @flow
+/*
+ * @flow
+ */
+
 import React from 'react';
 
 import styled from 'styled-components';
 import { Map } from 'immutable';
-// $FlowFixMe[missing-export]
 import { Chip, Typography } from 'lattice-ui-kit';
 import type { Role } from 'lattice';
 

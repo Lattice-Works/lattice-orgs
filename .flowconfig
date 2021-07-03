@@ -25,6 +25,11 @@
 [options]
 esproposal.optional_chaining=enable
 react.runtime=automatic
+module.name_mapper='^\~\/assets\/?\(.*\)$' -> '<PROJECT_ROOT>/src/assets/\1'
+module.name_mapper='^\~\/common\/?\(.*\)$' -> '<PROJECT_ROOT>/src/common/\1'
+module.name_mapper='^\~\/components\/?\(.*\)$' -> '<PROJECT_ROOT>/src/components/\1'
+module.name_mapper='^\~\/containers\/?\(.*\)$' -> '<PROJECT_ROOT>/src/containers/\1'
+module.name_mapper='^\~\/core\/?\(.*\)$' -> '<PROJECT_ROOT>/src/core/\1'
 
 [untyped]
 <PROJECT_ROOT>/node_modules/lattice-ui-kit

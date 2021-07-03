@@ -16,11 +16,12 @@ import { RequestStates } from 'redux-reqseq';
 import type { UUID } from 'lattice';
 import type { RequestState } from 'redux-reqseq';
 
-import * as Routes from '../../../core/router/Routes';
-import { ORGANIZATIONS } from '../../../common/constants';
-import { ModalBody, StackGrid } from '../../../components';
-import { resetRequestStates } from '../../../core/redux/actions';
-import { selectNewOrgId } from '../../../core/redux/selectors';
+import * as Routes from '~/core/router/Routes';
+import { ORGANIZATIONS } from '~/common/constants';
+import { ModalBody, StackGrid } from '~/components';
+import { resetRequestStates } from '~/core/redux/actions';
+import { selectNewOrgId } from '~/core/redux/selectors';
+
 import { CREATE_NEW_ORGANIZATION, createNewOrganization } from '../actions';
 
 const { isNonEmptyString } = LangUtils;

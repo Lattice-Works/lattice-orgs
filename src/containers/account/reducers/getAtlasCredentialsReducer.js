@@ -7,7 +7,7 @@ import { PrincipalsApiActions } from 'lattice-sagas';
 import { RequestStates } from 'redux-reqseq';
 import type { SequenceAction } from 'redux-reqseq';
 
-import { ATLAS_CREDENTIALS, REQUEST_STATE } from '../../../common/constants';
+import { ATLAS_CREDENTIALS, REQUEST_STATE } from '~/common/constants';
 
 const { GET_ATLAS_CREDENTIALS, getAtlasCredentials } = PrincipalsApiActions;
 

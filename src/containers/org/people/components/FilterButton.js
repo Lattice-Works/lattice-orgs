@@ -1,4 +1,7 @@
-// @flow
+/*
+ * @flow
+ */
+
 import React, { useState } from 'react';
 
 import styled from 'styled-components';
@@ -8,16 +11,15 @@ import { Map, hasIn } from 'immutable';
 import {
   Button,
   Checkbox,
-  // $FlowFixMe[missing-export]
   Menu,
-  // $FlowFixMe[missing-export]
   MenuItem,
   NestedMenuItem,
 } from 'lattice-ui-kit';
 import type { Role, UUID } from 'lattice';
 
-import { ExternalLinkIcon } from '../../../../assets/svg/icons';
-import { Routes } from '../../../../core/router';
+import { ExternalLinkIcon } from '~/assets/svg/icons';
+import { Routes } from '~/core/router';
+
 import {
   AUTH0,
   AUTHORIZATION,

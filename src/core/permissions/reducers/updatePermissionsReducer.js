@@ -15,7 +15,8 @@ import {
   ACES,
   ERROR,
   REQUEST_STATE,
-} from '../../../common/constants';
+} from '~/common/constants';
+
 import {
   UPDATE_PERMISSIONS,
   updatePermissions,

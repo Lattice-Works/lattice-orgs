@@ -1,11 +1,13 @@
-// @flow
+/*
+ * @flow
+ */
+
 import React from 'react';
 
-// $FlowFixMe[missing-export]
 import { Chip } from 'lattice-ui-kit';
 import type { Role, UUID } from 'lattice';
 
-import { ORG_ID_PARAM, ORG_ROLE, ROLE_ID_PARAM } from '../../core/router/Routes';
+import { ORG_ID_PARAM, ORG_ROLE, ROLE_ID_PARAM } from '~/core/router/Routes';
 
 type Props = {
   authorized :boolean;

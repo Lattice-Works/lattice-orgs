@@ -22,16 +22,16 @@ import {
 import { useBoolean } from 'lattice-utils';
 import type { PermissionType } from 'lattice';
 
-import { ES_FLAG_TYPE_RS_OPTIONS, PERMISSION_TYPE_RS_OPTIONS } from '../../common/constants';
+import { ES_FLAG_TYPE_RS_OPTIONS, PERMISSION_TYPE_RS_OPTIONS } from '~/common/constants';
 import {
   ActionsGrid,
   Flip,
   GapGrid,
   PlusButton,
   StackGrid,
-} from '../../components';
-import type { ReactSelectOption } from '../../common/types';
-import type { ActionsGridProps } from '../../components';
+} from '~/components';
+import type { ReactSelectOption } from '~/common/types';
+import type { ActionsGridProps } from '~/components';
 
 const StyledActionsGrid :ComponentType<ActionsGridProps> = styled(ActionsGrid)`
   grid-template-columns: 2fr minmax(200px, 1fr) auto;

@@ -18,9 +18,9 @@ import {
   ID,
   METADATA,
   NAME,
-} from '../../../common/constants';
-import { DataSetTitle, StackGrid } from '../../../components';
-import { Routes } from '../../../core/router';
+} from '~/common/constants';
+import { DataSetTitle, StackGrid } from '~/components';
+import { Routes } from '~/core/router';
 
 const { isNonEmptyString } = LangUtils;
 const { isValidUUID } = ValidationUtils;

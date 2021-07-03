@@ -13,15 +13,16 @@ import { RequestStates } from 'redux-reqseq';
 import type { Principal, UUID } from 'lattice';
 import type { RequestState } from 'redux-reqseq';
 
+import { PERMISSIONS } from '~/common/constants';
+import { ModalBody, StepsController } from '~/components';
+import { ASSIGN_PERMISSIONS_TO_DATA_SET, assignPermissionsToDataSet } from '~/core/permissions/actions';
+import { resetRequestStates } from '~/core/redux/actions';
+import { SEARCH_ORGANIZATION_DATA_SETS, clearSearchState } from '~/core/search/actions';
+
 import StepSelectDataSet from './StepSelectDataSet';
 
 import StepConfirm from '../StepConfirm';
 import StepSelectPermissions from '../StepSelectPermissions';
-import { PERMISSIONS } from '../../../common/constants';
-import { ModalBody, StepsController } from '../../../components';
-import { ASSIGN_PERMISSIONS_TO_DATA_SET, assignPermissionsToDataSet } from '../../../core/permissions/actions';
-import { resetRequestStates } from '../../../core/redux/actions';
-import { SEARCH_ORGANIZATION_DATA_SETS, clearSearchState } from '../../../core/search/actions';
 
 const ModalFooter = styled(LUKModalFooter)`
   padding: 30px 0;

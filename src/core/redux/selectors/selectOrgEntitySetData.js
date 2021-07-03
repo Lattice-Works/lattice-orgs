@@ -4,7 +4,7 @@
 import { Collection, Map } from 'immutable';
 import type { UUID } from 'lattice';
 
-import { DATA, ENTITY_SET_DATA } from '../../../common/constants';
+import { DATA, ENTITY_SET_DATA } from '~/common/constants';
 
 export default function selectOrgEntitySetData(entitySetId :UUID, entityKeyIds :Collection<UUID> | UUID[]) {
   return (state :Map) :Map<UUID, Map> => {

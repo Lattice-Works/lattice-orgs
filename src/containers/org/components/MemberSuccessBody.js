@@ -8,7 +8,7 @@ import { OrganizationsApiActions } from 'lattice-sagas';
 import { useDispatch } from 'react-redux';
 import type { UUID } from 'lattice';
 
-import { ModalBody } from '../../../components';
+import { ModalBody } from '~/components';
 
 const { getOrganizationMembers } = OrganizationsApiActions;
 

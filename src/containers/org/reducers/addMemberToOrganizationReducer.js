@@ -8,7 +8,7 @@ import { OrganizationsApiActions } from 'lattice-sagas';
 import { RequestStates } from 'redux-reqseq';
 import type { SequenceAction } from 'redux-reqseq';
 
-import { MEMBERS, ORGANIZATIONS, REQUEST_STATE } from '../../../common/constants';
+import { MEMBERS, ORGANIZATIONS, REQUEST_STATE } from '~/common/constants';
 import { sortOrganizationMembers } from '../utils';
 
 const {

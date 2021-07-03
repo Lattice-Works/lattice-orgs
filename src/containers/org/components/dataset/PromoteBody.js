@@ -6,17 +6,14 @@ import React, { useEffect } from 'react';
 
 import styled from 'styled-components';
 import { OrganizationsApiActions } from 'lattice-sagas';
-import {
-  Button,
-  Typography,
-} from 'lattice-ui-kit';
+import { Button, Typography } from 'lattice-ui-kit';
 import { useDispatch } from 'react-redux';
 import { RequestStates } from 'redux-reqseq';
 import type { UUID } from 'lattice';
 import type { RequestState } from 'redux-reqseq';
 
-import { ModalBody } from '../../../../components';
-import { resetRequestStates } from '../../../../core/redux/actions';
+import { ModalBody } from '~/components';
+import { resetRequestStates } from '~/core/redux/actions';
 
 const {
   promoteStagingTable,

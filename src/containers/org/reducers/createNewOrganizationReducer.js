@@ -13,7 +13,8 @@ import {
   NEW_ORGANIZATION_ID,
   ORGANIZATIONS,
   REQUEST_STATE,
-} from '../../../common/constants';
+} from '~/common/constants';
+
 import { CREATE_NEW_ORGANIZATION, createNewOrganization } from '../actions';
 
 const { OrganizationBuilder } = Models;

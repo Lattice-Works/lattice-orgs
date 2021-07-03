@@ -22,9 +22,10 @@ import type { AccessCheck, Organization, UUID } from 'lattice';
 import type { WorkerResponse } from 'lattice-sagas';
 import type { SequenceAction } from 'redux-reqseq';
 
-import { DATA_SET_ID, ERR_MISSING_ORG, IS_OWNER } from '../../../common/constants';
-import { isEntitySet } from '../../../common/utils';
-import { selectOrganization } from '../../redux/selectors';
+import { DATA_SET_ID, ERR_MISSING_ORG, IS_OWNER } from '~/common/constants';
+import { isEntitySet } from '~/common/utils';
+import { selectOrganization } from '~/core/redux/selectors';
+
 import { INITIALIZE_ORGANIZATION_DATA_SET, getOrgDataSetSize, initializeOrganizationDataSet } from '../actions';
 
 const { AccessCheckBuilder } = Models;

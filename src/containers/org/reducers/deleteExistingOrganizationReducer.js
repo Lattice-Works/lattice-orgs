@@ -6,7 +6,8 @@ import { Map } from 'immutable';
 import { RequestStates } from 'redux-reqseq';
 import type { SequenceAction } from 'redux-reqseq';
 
-import { ERROR, ORGANIZATIONS, REQUEST_STATE } from '../../../common/constants';
+import { ERROR, ORGANIZATIONS, REQUEST_STATE } from '~/common/constants';
+
 import { DELETE_EXISTING_ORGANIZATION, deleteExistingOrganization } from '../actions';
 
 export default function reducer(state :Map, action :SequenceAction) {

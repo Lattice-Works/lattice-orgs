@@ -118,6 +118,11 @@ module.exports = (env) => {
     ],
     resolve: {
       alias: {
+        '~/assets': path.resolve(SOURCE, 'assets'),
+        '~/common': path.resolve(SOURCE, 'common'),
+        '~/components': path.resolve(SOURCE, 'components'),
+        '~/containers': path.resolve(SOURCE, 'containers'),
+        '~/core': path.resolve(SOURCE, 'core'),
         // NOTE: rjsf still depends on core-js@2, should be able to remove with rjsf v3
         // core-js-pure is the core-js@3 equivalent of core-js/library from core-js@2
         // https://github.com/zloirock/core-js/blob/master/docs/2019-03-19-core-js-3-babel-and-a-look-into-the-future.md

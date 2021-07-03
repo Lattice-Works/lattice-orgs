@@ -19,18 +19,18 @@ import { useDispatch, useSelector } from 'react-redux';
 import type { UserInfo } from 'lattice-auth';
 import type { RequestState } from 'redux-reqseq';
 
-import { clearAtlasCredentials } from './actions';
-
-import { ACCOUNT } from '../../common/constants';
-import { clipboardWriteText } from '../../common/utils';
+import { ACCOUNT } from '~/common/constants';
+import { clipboardWriteText } from '~/common/utils';
 import {
   ActionsGrid,
   CopyButton,
   Pre,
   RefreshButton,
   StackGrid,
-} from '../../components';
-import { selectAtlasCredentials } from '../../core/redux/selectors';
+} from '~/components';
+import { selectAtlasCredentials } from '~/core/redux/selectors';
+
+import { clearAtlasCredentials } from './actions';
 
 const REGENERATE_SUCCESS = 'Atlas credential successfully regenerated.';
 const REGENERATE_FAILURE = 'Atlas credential failed to regenerate.';
@@ -39,14 +39,14 @@ const {
   isFailure,
   isPending,
   isStandby,
-  isSuccess
+  isSuccess,
 } = ReduxUtils;
 
 const {
   GET_ATLAS_CREDENTIALS,
   REGENERATE_CREDENTIAL,
   getAtlasCredentials,
-  regenerateCredential
+  regenerateCredential,
 } = PrincipalsApiActions;
 
 const DASHES :'---' = '---';

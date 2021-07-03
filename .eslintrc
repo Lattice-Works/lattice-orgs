@@ -19,6 +19,7 @@
     "flowtype": {
       "onlyFilesWithFlowAnnotation": true
     },
+    "import/internal-regex": "^\~",
     "import/resolver": {
       "webpack": {
         "config": "config/webpack/webpack.config.app.js"

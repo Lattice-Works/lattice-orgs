@@ -1,18 +1,17 @@
-// @flow
+/*
+ * @flow
+ */
+
 import React from 'react';
 
 import { faTimes } from '@fortawesome/pro-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Map } from 'immutable';
-import {
-  IconButton,
-  // $FlowFixMe[missing-export]
-  ListItem,
-} from 'lattice-ui-kit';
+import { IconButton, ListItem } from 'lattice-ui-kit';
+
+import { getUserProfile } from '~/common/utils';
 
 import StyledListItemSecondaryAction from './styled/StyledListItemSecondaryAction';
-
-import { getUserProfile } from '../../../common/utils';
 
 const CloseIcon = () => <FontAwesomeIcon fixedWidth icon={faTimes} />;
 

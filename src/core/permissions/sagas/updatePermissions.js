@@ -2,21 +2,13 @@
  * @flow
  */
 
-import {
-  call,
-  put,
-  takeEvery,
-} from '@redux-saga/core/effects';
+import { call, put, takeEvery } from '@redux-saga/core/effects';
 import { List } from 'immutable';
 import { Models } from 'lattice';
 import { PermissionsApiActions, PermissionsApiSagas } from 'lattice-sagas';
 import { AxiosUtils, Logger } from 'lattice-utils';
 import type { Saga } from '@redux-saga/core';
-import type {
-  Ace,
-  ActionType,
-  UUID,
-} from 'lattice';
+import type { Ace, ActionType, UUID } from 'lattice';
 import type { WorkerResponse } from 'lattice-sagas';
 import type { SequenceAction } from 'redux-reqseq';
 

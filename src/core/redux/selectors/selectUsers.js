@@ -5,7 +5,7 @@
 import { Map, getIn } from 'immutable';
 import { LangUtils } from 'lattice-utils';
 
-import { USERS } from '../../../common/constants';
+import { USERS } from '~/common/constants';
 
 const { isNonEmptyString } = LangUtils;
 

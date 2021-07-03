@@ -10,7 +10,7 @@ import type {
   UUID,
 } from 'lattice';
 
-import { ID } from '../../../common/constants';
+import { ID } from '~/common/constants';
 
 function computePermissionAssignments(
   myKeys :Set<List<UUID>>,

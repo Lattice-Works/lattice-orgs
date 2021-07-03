@@ -11,7 +11,8 @@ import {
   ERROR,
   INTEGRATION_DETAILS,
   REQUEST_STATE,
-} from '../../../common/constants';
+} from '~/common/constants';
+
 import { GET_ORGANIZATION_INTEGRATION_DETAILS, getOrganizationIntegrationDetails } from '../actions';
 
 export default function reducer(state :Map, action :SequenceAction) {

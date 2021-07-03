@@ -8,7 +8,7 @@ import clearSearchStateReducer from './clearSearchStateReducer';
 import searchDataReducer from './searchDataReducer';
 import searchOrganizationDataSetsReducer from './searchOrganizationDataSetsReducer';
 
-import { INITIAL_SEARCH_STATE } from '../../../common/constants';
+import { INITIAL_SEARCH_STATE } from '~/common/constants';
 import { RESET_REQUEST_STATES } from '../../redux/actions';
 import { resetRequestStatesReducer } from '../../redux/reducers';
 import {

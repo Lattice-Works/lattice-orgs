@@ -14,9 +14,9 @@ import type { UUID } from 'lattice';
 import type { UserInfo } from 'lattice-auth';
 import type { RequestState } from 'redux-reqseq';
 
-import { ORGANIZATIONS } from '../../../common/constants';
-import { getUserTitle } from '../../../common/utils';
-import { ModalBody, ResetOnUnmount } from '../../../components';
+import { ORGANIZATIONS } from '~/common/constants';
+import { getUserTitle } from '~/common/utils';
+import { ModalBody, ResetOnUnmount } from '~/components';
 
 const { getUserId } = PersonUtils;
 

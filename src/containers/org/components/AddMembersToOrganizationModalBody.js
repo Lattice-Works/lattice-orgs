@@ -15,16 +15,17 @@ import type { List } from 'immutable';
 import type { UUID } from 'lattice';
 import type { RequestState } from 'redux-reqseq';
 
+import { ORGANIZATIONS } from '~/common/constants';
+import { getUserProfile } from '~/common/utils';
+import { ModalBody, ResetOnUnmount } from '~/components';
+import { StepConfirm } from '~/containers/permissions';
+import type { ReactSelectOption } from '~/common/types';
+
 import AddMemberListItem from './AddMemberListItem';
 import SearchMemberBar from './SearchMemberBar';
 import StyledFooter from './styled/StyledFooter';
 
-import StepConfirm from '../../permissions/StepConfirm';
-import { ORGANIZATIONS } from '../../../common/constants';
-import { getUserProfile } from '../../../common/utils';
-import { ModalBody, ResetOnUnmount } from '../../../components';
 import { ADD_MEMBERS_TO_ORGANIZATION, addMembersToOrganization } from '../actions';
-import type { ReactSelectOption } from '../../../common/types';
 
 const { isPending, isSuccess } = ReduxUtils;
 

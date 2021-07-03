@@ -6,7 +6,7 @@ import { Map } from 'immutable';
 import { RequestStates } from 'redux-reqseq';
 import type { SequenceAction } from 'redux-reqseq';
 
-import { REQUEST_STATE } from '../../../common/constants';
+import { REQUEST_STATE } from '~/common/constants';
 import { INITIALIZE_APPLICATION, initializeApplication } from '../actions';
 
 export default function reducer(state :Map, action :SequenceAction) {

@@ -14,7 +14,7 @@ import RoleOverflowPopover from './RoleOverflowPopover';
 import usePriorityVisibility from './usePriorityVisibility';
 
 import MemberRoleChip from '../../MemberRoleChip';
-import { getUserProfile } from '../../../../common/utils';
+import { getUserProfile } from '~/common/utils';
 
 const { PermissionTypes } = Types;
 

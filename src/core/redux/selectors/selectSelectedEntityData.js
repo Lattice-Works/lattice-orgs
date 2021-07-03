@@ -4,7 +4,7 @@
 
 import { List, Map } from 'immutable';
 
-import { EXPLORE, SELECTED_ENTITY_DATA } from '../../../common/constants';
+import { EXPLORE, SELECTED_ENTITY_DATA } from '~/common/constants';
 
 export default function selectSelectedEntityData() {
 

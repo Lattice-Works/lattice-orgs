@@ -8,7 +8,7 @@ import { PersonUtils } from 'lattice-utils';
 import { RequestStates } from 'redux-reqseq';
 import type { SequenceAction } from 'redux-reqseq';
 
-import { REQUEST_STATE, USERS } from '../../../common/constants';
+import { REQUEST_STATE, USERS } from '~/common/constants';
 
 const { GET_ORGANIZATION_MEMBERS, getOrganizationMembers } = OrganizationsApiActions;
 const { getUserId } = PersonUtils;

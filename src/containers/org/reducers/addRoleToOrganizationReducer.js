@@ -8,7 +8,8 @@ import { RequestStates } from 'redux-reqseq';
 import type { Organization, Role } from 'lattice';
 import type { SequenceAction } from 'redux-reqseq';
 
-import { ERROR, ORGANIZATIONS, REQUEST_STATE } from '../../../common/constants';
+import { ERROR, ORGANIZATIONS, REQUEST_STATE } from '~/common/constants';
+
 import { ADD_ROLE_TO_ORGANIZATION, addRoleToOrganization } from '../actions';
 
 const { OrganizationBuilder } = Models;
