@@ -30,6 +30,9 @@ const ORGS :'/orgs' = '/orgs';
 const ORG :'/orgs/:organizationId' = `${ORGS}/${ORG_ID_PARAM}`;
 
 // $FlowFixMe - ignoring flow because I prefer the code hints to show the value
+const ORG_COLLABORATIONS :'/orgs/:organizationId/collaborations' = `${ORGS}/${ORG_ID_PARAM}/collaborations`;
+
+// $FlowFixMe - ignoring flow because I prefer the code hints to show the value
 const ORG_ACCESS_REQUESTS :'/orgs/:organizationId/access' = `${ORG}/access`;
 
 // $FlowFixMe - ignoring flow because I prefer the code hints to show the value
@@ -40,6 +43,9 @@ const ORG_DATA_SETS :'/orgs/:organizationId/dataSets' = `${ORG}/dataSets`;
 
 // $FlowFixMe - ignoring flow because I prefer the code hints to show the value
 const ORG_DATA_SET :'/orgs/:organizationId/dataSets/:dataSetId' = `${ORG_DATA_SETS}/${DATA_SET_ID_PARAM}`;
+
+// $FlowFixMe - ignoring flow because I prefer the code hints to show the value
+const ORG_DATA_SET_COLLABORATIONS :'/orgs/:organizationId/dataSets/:dataSetId/collaborations' = `${ORG_DATA_SETS}/${DATA_SET_ID_PARAM}/collaborations`;
 
 // $FlowFixMe - ignoring flow because I prefer the code hints to show the value
 const ORG_DATA_SET_OBJECT_PERMISSIONS :'/orgs/:organizationId/dataSets/:dataSetId/permissions' = `${ORG_DATA_SET}/permissions`;
@@ -79,8 +85,10 @@ export {
   ORGS,
   ORG_ACCESS_REQUEST,
   ORG_ACCESS_REQUESTS,
+  ORG_COLLABORATIONS,
   ORG_DATA_SET,
   ORG_DATA_SETS,
+  ORG_DATA_SET_COLLABORATIONS,
   ORG_DATA_SET_DATA,
   ORG_DATA_SET_OBJECT_PERMISSIONS,
   ORG_MEMBER,

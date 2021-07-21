@@ -2,7 +2,7 @@
  * @flow
  */
 
-import React, { useEffect, useMemo, useState } from 'react';
+import React, { useEffect, useMemo } from 'react';
 
 import { faFileContract, faUser } from '@fortawesome/pro-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -22,6 +22,8 @@ import {
   useRequestState,
 } from 'lattice-utils';
 import { useDispatch, useSelector } from 'react-redux';
+import { useLocation } from 'react-router';
+import { Link, Route, Switch } from 'react-router-dom';
 import type { Organization, UUID } from 'lattice';
 import type { RequestState } from 'redux-reqseq';
 
@@ -30,7 +32,6 @@ import OrgDataSetsContainer from './OrgDataSetsContainer';
 import { DELETE_EXISTING_ORGANIZATION } from './actions';
 import { OrgActionButton } from './components';
 
-import TabPanel from '../../components/other/TabPanel';
 import { BadgeCheckIcon } from '../../assets';
 import {
   CrumbLink,
@@ -47,6 +48,7 @@ import {
   selectOrganization,
 } from '../../core/redux/selectors';
 import { Routes } from '../../core/router';
+import { ORG, ORG_COLLABORATIONS } from '../../core/router/Routes';
 import {
   SEARCH_ORGANIZATION_DATA_SETS,
   searchOrganizationDataSets,
@@ -68,7 +70,7 @@ const OrgContainer = ({
 |}) => {
 
   const dispatch = useDispatch();
-  const [tab, setTab] = useState('datasets');
+  const location = useLocation();
 
   const deleteOrgRS :?RequestState = useRequestState([ORGANIZATIONS, DELETE_EXISTING_ORGANIZATION]);
   const searchOrgDataSetsRS :?RequestState = useRequestState([SEARCH, SEARCH_ORGANIZATION_DATA_SETS]);
@@ -77,6 +79,9 @@ const OrgContainer = ({
   const organization :?Organization = useSelector(selectOrganization(organizationId));
   const isInstalled :boolean = useSelector(selectIsAppInstalled(APPS.ACCESS_REQUESTS, organizationId));
   const collaborationsByOrganizationId = useSelector(selectCollaborationsByOrgId(organizationId));
+
+  const collaborationHref = ORG_COLLABORATIONS.replace(':organizationId', organizationId);
+  const orgHref = ORG.replace(':organizationId', organizationId);
 
   useEffect(() => {
     dispatch(getCollaborationsWithOrganization(organizationId));
@@ -117,10 +122,6 @@ const OrgContainer = ({
   const requestsPath = useMemo(() => (
     Routes.ORG_ACCESS_REQUESTS.replace(Routes.ORG_ID_PARAM, organizationId)
   ), [organizationId]);
-
-  const handleChangeTab = (event, newValue) => {
-    setTab(newValue);
-  };
 
   if (organization) {
     const rolesCount :number = organization.roles.length;
@@ -176,20 +177,33 @@ const OrgContainer = ({
           <Tabs
               aria-label="tabs"
               indicatorColor="primary"
-              onChange={handleChangeTab}
               textColor="primary"
-              value={tab}>
-            <Tab label="Data Sets" value="datasets" />
-            <Tab label={collabTabText} value="collaborations" />
+              value={location.pathname}>
+            <Tab
+                component={Link}
+                to={orgHref}
+                label="Data Sets"
+                value={orgHref} />
+            <Tab
+                component={Link}
+                to={collaborationHref}
+                label={collabTabText}
+                value={collaborationHref} />
           </Tabs>
-          <TabPanel show={tab === 'datasets'}>
-            <OrgDataSetsContainer organizationId={organizationId} />
-          </TabPanel>
-          <TabPanel show={tab === 'collaborations'}>
-            <CollaborationsParticipationContainer
-                collaborations={collaborationsByOrganizationId}
-                type="organization" />
-          </TabPanel>
+          <Switch>
+            <Route
+                path={ORG}
+                exact
+                render={() => <OrgDataSetsContainer organizationId={organizationId} />} />
+            <Route
+                exact
+                path={ORG_COLLABORATIONS}
+                render={() => (
+                  <CollaborationsParticipationContainer
+                      collaborations={collaborationsByOrganizationId}
+                      type="organization" />
+                )} />
+          </Switch>
         </StackGrid>
       </AppContentWrapper>
     );

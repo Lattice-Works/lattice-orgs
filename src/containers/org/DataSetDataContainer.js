@@ -11,7 +11,6 @@ import {
   set,
 } from 'immutable';
 import {
-  AppContentWrapper,
   PaginationToolbar,
   Table,
   Typography,
@@ -129,7 +128,7 @@ const DataSetDataContainer = ({
   }), []);
 
   return (
-    <AppContentWrapper>
+    <StackGrid gap={0}>
       <StackGrid gap={16}>
         <SearchForm
             onSubmit={(query :string) => dispatchSearch({ query })}
@@ -166,7 +165,7 @@ const DataSetDataContainer = ({
           isVisible={isValidUUID(dataSetId) && isValidUUID(selectedEntityKeyId)}
           onClose={() => setSelectedEntityKeyId('')}
           organizationId={organizationId} />
-    </AppContentWrapper>
+    </StackGrid>
   );
 };
 

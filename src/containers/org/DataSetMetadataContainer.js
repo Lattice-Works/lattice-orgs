@@ -10,7 +10,7 @@ import React, {
 } from 'react';
 
 import { List, Map } from 'immutable';
-import { AppContentWrapper, Table } from 'lattice-ui-kit';
+import { Table } from 'lattice-ui-kit';
 import { useRequestState } from 'lattice-utils';
 import { useDispatch, useSelector } from 'react-redux';
 import type { UUID } from 'lattice';
@@ -18,7 +18,7 @@ import type { RequestState } from 'redux-reqseq';
 
 import EditableMetadataRow from './components/EditableMetadataRow';
 
-import { UpdateMetaModal } from '../../components';
+import { StackGrid, UpdateMetaModal } from '../../components';
 import { UPDATE_ORGANIZATION_DATA_SET, updateOrganizationDataSet } from '../../core/edm/actions';
 import { EDM } from '../../core/redux/constants';
 import { selectMyKeys, selectOrgDataSetColumns } from '../../core/redux/selectors';
@@ -135,7 +135,7 @@ const DataSetMetadataContainer = ({
   }), [isDataSetOwner]);
 
   return (
-    <AppContentWrapper>
+    <StackGrid>
       <Table components={components} data={tableData} headers={TABLE_HEADERS} />
       <UpdateMetaModal
           isVisible={modalState.isVisible}
@@ -144,7 +144,7 @@ const DataSetMetadataContainer = ({
           requestState={updateOrgDataSetRS}
           requestStateAction={UPDATE_ORGANIZATION_DATA_SET}
           schema={modalState.schema} />
-    </AppContentWrapper>
+    </StackGrid>
   );
 };
 
